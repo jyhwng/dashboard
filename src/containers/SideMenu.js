@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Grid, Menu, Segment, Input} from 'semantic-ui-react'
 import Header from '../components/Header';
+import Activity from '../components/Activity'
 import Stats from '../components/Stats'
 import Status from '../components/Status'
 import Chart from '../components/Chart'
@@ -28,6 +29,7 @@ class SideMenu extends Component {
                         <Grid.Row>
                             <Grid.Column>
                                 <Stats/>
+                                <Activity />
                             </Grid.Column>
                             <Grid.Column width={10}>
                                 <Chart/>
@@ -49,7 +51,7 @@ class SideMenu extends Component {
                         <Menu.Item name='Trend' active={activeItem === 'Trend'} onClick={this.handleItemClick}/>
                         <Menu.Item name='Calendar' active={activeItem === 'Calendar'} onClick={this.handleItemClick}/>
                         <Menu.Item name='Activities' active={activeItem === 'Activities'}
-                                   onClick={this.handleItemClick}/>
+                           onClick={this.handleItemClick}/>
                         <Menu.Item name='Report' active={activeItem === 'Report'} onClick={this.handleItemClick}/>
                         <Menu.Item>
                             <Input icon='search' placeholder='Search...'/>
