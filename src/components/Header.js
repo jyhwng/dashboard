@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Menu} from 'semantic-ui-react'
+import {Menu, Grid, Segment} from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
+import Content from '../containers/Content'
 
 class MainHeader extends Component {
     state = {activeItem: 'home'}
@@ -34,9 +35,13 @@ class MainHeader extends Component {
                         <Menu.Item name='setting' active={activeItem === 'setting'} onClick={this.handleItemClick}>
                             <Icon name='setting' size='large' style={iconStyle} />
                         </Menu.Item>
-                        <Menu.Item name='logout' active={activeItem === 'logout'} onClick={this.handleItemClick}/>
                     </Menu.Menu>
                 </Menu>
+                <Grid>
+                    <Grid.Column>
+
+                    </Grid.Column>
+                </Grid>
             </div>
         )
     }

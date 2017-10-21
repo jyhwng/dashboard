@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import {Grid, Menu, Segment, Input} from 'semantic-ui-react'
 import Header from '../components/Header';
-import Activity from '../components/Activity'
-import Stats from '../components/Stats'
-import Status from '../components/Status'
-import Chart from '../components/Chart'
+import Content from './Content';
+import Overview from './Overview'
+import Calendar from '../components/Calendar'
 
 class SideMenu extends Component {
-    state = {activeItem: 'Trend'}
+    state = {activeItem: 'Overview'}
     handleItemClick = (e, {name}) => this.setState({activeItem: name})
 
     render() {
@@ -22,25 +21,18 @@ class SideMenu extends Component {
         }
 
         let segmentContent;
-        if (this.state.activeItem === 'Trend') {
+        if (this.state.activeItem === 'Overview') {
             segmentContent = (
-                <div>
-                    <Grid columns='equal'>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <Stats/>
-                                <Activity />
-                            </Grid.Column>
-                            <Grid.Column width={10}>
-                                <Chart/>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-                    <Status/>
-                </div>
+                <Overview />
+            )
+        } else if (this.state.activeItem === 'Calendar') {
+            segmentContent = (
+                <Calendar />
             )
         } else {
-            segmentContent = this.state.activeItem
+            segmentContent = (
+                this.state.activeItem
+            )
         }
 
         return (
@@ -48,7 +40,7 @@ class SideMenu extends Component {
                 <Grid.Column width={3}>
                     <Menu fluid vertical tabular>
                         <Menu.Item name='My Dashboard' />
-                        <Menu.Item name='Trend' active={activeItem === 'Trend'} onClick={this.handleItemClick}/>
+                        <Menu.Item name='Overview' active={activeItem === 'Overview'} onClick={this.handleItemClick}/>
                         <Menu.Item name='Calendar' active={activeItem === 'Calendar'} onClick={this.handleItemClick}/>
                         <Menu.Item name='Activities' active={activeItem === 'Activities'}
                            onClick={this.handleItemClick}/>

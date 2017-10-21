@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Grid, Container} from 'semantic-ui-react'
+import {Container} from 'semantic-ui-react'
 import SideMenu from './containers/SideMenu'
-import Content from './containers/Content'
-import Header from './components/Header';
 
 class App extends Component {
     render() {
