@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Segment, Grid, Icon} from 'semantic-ui-react'
-import './styles/Updates.css'
+import './Updates.css'
 
 class Updates extends Component {
     render() {

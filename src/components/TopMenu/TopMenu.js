@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Menu, Grid, Icon} from 'semantic-ui-react'
-import './styles/Header.css'
+import './Header.css'
 import TopSearch from './TopSearch'
 import MyPage from './MyPage'
 
-class MainHeader extends Component {
+class TopMenu extends Component {
     state = {activeItem: 'toggle'}
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name})
@@ -65,4 +65,4 @@ class MainHeader extends Component {
     }
 }
 
-export default MainHeader;
+export default TopMenu;

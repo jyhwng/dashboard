@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Card, Icon, Image} from 'semantic-ui-react'
-import './styles/NameCard.css'
+import './NameCard.css'
 
 class NameCard extends Component {
     render() {

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import _ from 'lodash'
 import faker from 'faker'
 import {Search} from 'semantic-ui-react'
-import './styles/TopSearch.css'
+import './TopSearch.css'
 
 const source = _.times(5, () => ({
     title: faker.company.companyName(),

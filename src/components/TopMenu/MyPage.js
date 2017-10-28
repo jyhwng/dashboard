@@ -3,8 +3,8 @@ import {Dropdown, Icon} from 'semantic-ui-react'
 
 const trigger = (
     <span>
-    <Icon name='user'/> soonbeom24
-  </span>
+        <Icon name='user'/> soonbeom24
+    </span>
 )
 
 const options = [

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Segment, Grid} from 'semantic-ui-react'
-import './styles/Footer.css'
+import './Footer.css'
 
 class Footer extends Component {
     render() {
