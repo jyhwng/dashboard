@@ -5,8 +5,11 @@ import Footer from '../components/Footer'
 import './styles/SideMenu.css'
 
 class SideMenu extends Component {
-    state = {
-        activeItem: 'Dashboard',
+    constructor(props){
+        super(props);
+        this.state = {
+            activeItem: 'Dashboard',
+        }
     }
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name})
@@ -31,43 +34,51 @@ class SideMenu extends Component {
                 )
         }
 
+        const leftMenuList = [
+            { 'name': 'Dashboard', 'icon': 'home' },
+            { 'name': 'Calendar', 'icon': 'block layout' },
+            { 'name': 'Options', 'icon': 'options' },
+            { 'name': 'Report', 'icon': 'checkmark box' },
+            { 'name': 'Page', 'icon': 'sticky note outline' },
+        ]
+
+        let leftMenus = (
+            <div>
+                {leftMenuList.map((item) => {
+                    return (
+                        <Menu.Item name={item['name']} active={activeItem === item['name']}
+                            key={item['name']}
+                            onClick={this.handleItemClick}>
+                            <Icon name={item['icon']} size='large' style={iconStyle}/>
+                            <span>{item['name']}</span>
+                        </Menu.Item>
+                    )
+                })}
+            </div>
+        )
+
+        let dashboardHeader = (
+            <Header as="h2">
+                <Header.Content className="top-header">{this.state.activeItem}
+                    <Header.Subheader>
+                        <Icon name='calendar outline'/>
+                        Dashboard &emsp; / &emsp;
+                        <Icon name='calendar outline'/>
+                        Dashboard
+                    </Header.Subheader>
+                </Header.Content>
+            </Header>
+        )
+
         return (
             <Grid>
                 <Grid.Column width={2}>
                     <Menu pointing secondary vertical className="side-menu">
-                        <Menu.Item name='Dashboard' active={activeItem === 'Dashboard'} onClick={this.handleItemClick}>
-                            <Icon name='home' size='large' style={iconStyle}/>
-                            <span>Dashboard</span>
-                        </Menu.Item>
-                        <Menu.Item name='Calendar' active={activeItem === 'Calendar'} onClick={this.handleItemClick}>
-                            <Icon name='block layout' size='large' style={iconStyle}/>
-                            <span>Calendar</span>
-                        </Menu.Item>
-                        <Menu.Item name='Options' active={activeItem === 'Options'} onClick={this.handleItemClick}>
-                            <Icon name='options' size='large' style={iconStyle}/>
-                            <span>Options</span>
-                        </Menu.Item>
-                        <Menu.Item name='Report' active={activeItem === 'Report'} onClick={this.handleItemClick}>
-                            <Icon name='checkmark box' size='large' style={iconStyle}/>
-                            <span>Form</span>
-                        </Menu.Item>
-                        <Menu.Item name='Page' active={activeItem === 'Page'} onClick={this.handleItemClick}>
-                            <Icon name='sticky note outline' size='large' style={iconStyle}/>
-                            <span>Page</span>
-                        </Menu.Item>
+                    {leftMenus}
                     </Menu>
                 </Grid.Column>
                 <Grid.Column stretched width={14}>
-                    <Header as="h2">
-                        <Header.Content className="top-header">{this.state.activeItem}
-                            <Header.Subheader>
-                                <Icon name='calendar outline'/>
-                                Dashboard &emsp; / &emsp;
-                                <Icon name='calendar outline'/>
-                                Dashboard
-                            </Header.Subheader>
-                        </Header.Content>
-                    </Header>
+                    {dashboardHeader}
                     <Segment basic>
                         {segmentContent}
                     </Segment>
