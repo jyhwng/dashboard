@@ -1,0 +1,20 @@
+@import "../../App.scss";
+
+.updates {
+    .four.wide.column:first-child {
+        .ui.segment {
+            background-color: #77d3d9;
+            color: #fff;
+        }
+    }
+    .four.wide.column:nth-child(2) {
+        .ui.segment {
+            background-color: #e58784;
+            color: #fff;
+        }
+    }
+    .updates-score {
+        font-size: 30px;
+        float: right;
+    }
+}

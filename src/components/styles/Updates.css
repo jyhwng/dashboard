@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.App {
+  font-family: 'Poppins', sans-serif; }
+
+.ui.basic.segment {
+  background-color: #f8f8f8 !important;
+  border: 1px solid #e8e8ec !important;
+  margin-left: -0.6rem;
+  padding-right: 1.5rem; }
+
+.ui.card {
+  width: 100% !important; }
+
+.updates .four.wide.column:first-child .ui.segment {
+  background-color: #77d3d9;
+  color: #fff; }
+
+.updates .four.wide.column:nth-child(2) .ui.segment {
+  background-color: #e58784;
+  color: #fff; }
+
+.updates .updates-score {
+  font-size: 30px;
+  float: right; }

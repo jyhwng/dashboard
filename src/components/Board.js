@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Icon, Table} from 'semantic-ui-react'
 
-class Status extends Component {
+class Board extends Component {
     render() {
         return (
             <Table celled structured>
@@ -64,4 +64,4 @@ class Status extends Component {
     }
 }
 
-export default Status
+export default Board
