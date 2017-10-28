@@ -10,3 +10,6 @@
 
 .ui.card {
   width: 100% !important; }
+
+.chart-container {
+  height: 400px; }

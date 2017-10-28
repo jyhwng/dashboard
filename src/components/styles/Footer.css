@@ -10,3 +10,12 @@
 
 .ui.card {
   width: 100% !important; }
+
+.fixed-footer-container {
+  border: none !important;
+  box-shadow: none !important; }
+
+.fixed-footer {
+  border-radius: 4px;
+  background-color: #3cbfc8;
+  color: #fff; }

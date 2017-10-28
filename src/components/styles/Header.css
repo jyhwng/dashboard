@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.App {
+  font-family: 'Poppins', sans-serif; }
+
+.ui.basic.segment {
+  background-color: #f8f8f8 !important;
+  border: 1px solid #e8e8ec !important;
+  margin-left: -0.6rem;
+  padding-right: 1.5rem; }
+
+.ui.card {
+  width: 100% !important; }
+
+.menu-logo {
+  width: 12.5rem; }
+
+.ui.menu .item {
+  color: #4a4a4a !important; }
+
+.ui.secondary.pointing.menu .item span {
+  font-size: 0.75rem; }
+
+.center.menu .active.item {
+  color: #3cbfc8 !important;
+  font-weight: 400 !important;
+  border-color: #3cbfc8 !important; }
+
+.right.menu .item:first-child {
+  padding: 0.5rem 1rem !important; }

@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "faker": "^4.1.0",
+    "moment": "^2.19.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^16.0.0",
+    "react-big-calendar": "^0.16.1",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "recharts": "^1.0.0-alpha.6",

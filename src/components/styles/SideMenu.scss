@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.ui.vertical.menu {
+    width: 12.5rem !important;
+    .item {
+        color: #4a4a4a !important;
+        text-align: left !important;
+        height: 3rem !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    .active.item {
+        color: $lightBlue !important;
+        border-right: 4px solid $lightBlue !important;
+        background-color: #f8f8f8 !important;
+        font-weight: 400 !important;
+    }
+}
+
+.side-menu {
+    font-size: 12px !important;
+}
+
+.ui.vertical.menu .item>i.icon {
+    float: left !important;
+}
+
+.ui.header {
+    text-align: left !important;
+    margin-left: 1rem !important;
+}
+
+.top-header {
+    font-weight: 600;
+    color: #4a4a4a;
+    font-size: 30px;
+    .sub.header {
+        margin-top: 1rem !important;
+    	font-size: 10px !important;
+    	color: #9b9b9b !important;
+    }
+}

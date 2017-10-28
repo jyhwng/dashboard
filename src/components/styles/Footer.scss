@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.fixed-footer-container {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.fixed-footer {
+    border-radius: 4px;
+    background-color: $lightBlue;
+    color: #fff;
+}
