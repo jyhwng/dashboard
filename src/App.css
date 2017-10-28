@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 .App {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 .ui.basic.segment {
   background-color: #f8f8f8 !important;
