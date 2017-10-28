@@ -16,6 +16,11 @@
   box-shadow: none !important; }
 
 .fixed-footer {
+  padding: 1.5rem 1rem !important;
   border-radius: 4px;
   background-color: #3cbfc8;
-  color: #fff; }
+  color: #fff;
+  margin-right: 1rem !important; }
+
+.one.column.row {
+  text-align: center !important; }
