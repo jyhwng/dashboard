@@ -1,7 +1,8 @@
-@import "../../App.scss";
+@import "../App.scss";
 
 .ui.vertical.menu {
     width: 12.5rem !important;
+    font-family: 'Poppins', sans-serif;
     .item {
         color: #4a4a4a !important;
         text-align: left !important;
@@ -15,14 +16,14 @@
         background-color: #f8f8f8 !important;
         font-weight: 400 !important;
     }
+    .side-menu-drop-down {
+        right: 10px;
+        position: absolute;
+    }
 }
 
 .side-menu {
     font-size: 12px !important;
-}
-
-.ui.vertical.menu .item>i.icon {
-    float: left !important;
 }
 
 .ui.header {
@@ -31,9 +32,10 @@
 }
 
 .top-header {
-    font-weight: 600;
+    font-weight: 400;
     color: #4a4a4a;
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
     .sub.header {
         margin-top: 1rem !important;
     	font-size: 10px !important;

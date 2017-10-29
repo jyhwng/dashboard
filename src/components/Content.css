@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 .App {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 .ui.basic.segment {
   background-color: #f8f8f8 !important;
@@ -12,7 +13,8 @@
   width: 100% !important; }
 
 .ui.vertical.menu {
-  width: 12.5rem !important; }
+  width: 12.5rem !important;
+  font-family: 'Poppins', sans-serif; }
   .ui.vertical.menu .item {
     color: #4a4a4a !important;
     text-align: left !important;
@@ -24,21 +26,22 @@
     border-right: 4px solid #3cbfc8 !important;
     background-color: #f8f8f8 !important;
     font-weight: 400 !important; }
+  .ui.vertical.menu .side-menu-drop-down {
+    right: 10px;
+    position: absolute; }
 
 .side-menu {
   font-size: 12px !important; }
-
-.ui.vertical.menu .item > i.icon {
-  float: left !important; }
 
 .ui.header {
   text-align: left !important;
   margin-left: 1rem !important; }
 
 .top-header {
-  font-weight: 600;
+  font-weight: 400;
   color: #4a4a4a;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif; }
   .top-header .sub.header {
     margin-top: 1rem !important;
     font-size: 10px !important;
