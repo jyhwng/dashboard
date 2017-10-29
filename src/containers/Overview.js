@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {Segment, Grid} from 'semantic-ui-react'
-import Updates from '../components/Updates'
-import Board from '../components/Board'
+import Updates from '../components/elements/Updates'
+import Board from '../components/elements/Board'
 import NameCard from '../components/elements/NameCard'
-import Chart from '../components/Chart'
-import './styles/Overview.css'
+import Chart from '../components/elements/Chart'
+import './Overview.css'
 
 class Overview extends Component {
     render() {

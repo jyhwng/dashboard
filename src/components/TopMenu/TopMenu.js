@@ -3,6 +3,7 @@ import {Menu, Grid, Icon} from 'semantic-ui-react'
 import './Header.css'
 import TopSearch from './TopSearch'
 import MyPage from './MyPage'
+import './TopMenu.css'
 
 class TopMenu extends Component {
     state = {activeItem: 'toggle'}

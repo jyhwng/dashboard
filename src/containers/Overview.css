@@ -12,16 +12,5 @@
 .ui.card {
   width: 100% !important; }
 
-.fixed-footer-container {
-  border: none !important;
-  box-shadow: none !important; }
-
-.fixed-footer {
-  padding: 1.5rem 1rem !important;
-  border-radius: 4px;
-  background-color: #3cbfc8;
-  color: #fff;
-  margin-right: 1rem !important; }
-
-.one.column.row {
-  text-align: center !important; }
+.chart-container {
+  height: 400px; }
