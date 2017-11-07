@@ -1,5 +1,41 @@
 @import "../../App.scss";
 
-* {
-    font-family: 'Poppins', sans-serif;
+.top-menu {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.menu-logo {
+    width: 200px;
+}
+
+.ui.menu .item {
+    color: #4a4a4a !important;
+}
+
+.ui.secondary.pointing.menu {
+    margin-bottom: 0;
+    .item {
+        span {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.center.menu {
+    .active.item {
+        color: $lightBlue !important;
+        font-weight: 400 !important;
+        border-color: $lightBlue !important;
+    }
+}
+
+.right.menu {
+    .item:first-child {
+        padding: 0.5rem 1rem !important;
+    }
 }

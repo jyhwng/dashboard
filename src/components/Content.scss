@@ -1,7 +1,20 @@
 @import "../App.scss";
 
+.left-menus {
+  position: fixed;
+  top: 67px;
+  width: 200px;
+  padding-right: 0 !important;
+}
+
+.main-container {
+  margin-top: 67px;
+  width: 100%;
+  padding-left: 200px !important;
+}
+
 .ui.vertical.menu {
-    width: 12.5rem !important;
+  width: 100% !important;
     font-family: 'Poppins', sans-serif;
     .item {
         color: #4a4a4a !important;

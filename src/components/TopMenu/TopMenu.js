@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Menu, Grid, Icon} from 'semantic-ui-react'
-import './Header.css'
+import {Menu, Icon} from 'semantic-ui-react'
 import TopSearch from './TopSearch'
 import MyPage from './MyPage'
 import './TopMenu.css'
@@ -18,7 +17,7 @@ class TopMenu extends Component {
         }
 
         return (
-            <div>
+            <div className="top-menu">
                 <Menu pointing secondary>
                     <Menu.Menu postion="left" className="menu-logo">
                         <Menu.Item>
@@ -56,11 +55,6 @@ class TopMenu extends Component {
                         </Menu.Item>
                     </Menu.Menu>
                 </Menu>
-                <Grid>
-                    <Grid.Column>
-
-                    </Grid.Column>
-                </Grid>
             </div>
         )
     }

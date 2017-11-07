@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Grid, Menu, Header, Segment, Icon} from 'semantic-ui-react'
+import {Menu, Header, Segment, Icon} from 'semantic-ui-react'
 import Overview from '../containers/Overview'
 import Forms from '../containers/Forms'
 import Footer from '../components/Footer'
@@ -78,18 +78,18 @@ class Content extends Component {
         )
 
         return (
-            <Grid>
-                <Grid.Column width={2}>
+            <div>
+                <div className="left-menus">
                     {leftMenus}
-                </Grid.Column>
-                <Grid.Column stretched width={14}>
+                </div>
+                <div className="main-container">
                     {dashboardTitle}
                     <Segment basic>
                         {segmentContent}
                     </Segment>
                     <Footer/>
-                </Grid.Column>
-            </Grid>
+                </div>
+            </div>
         )
     }
 }
