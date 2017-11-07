@@ -3,7 +3,7 @@ import {Segment, Grid} from 'semantic-ui-react'
 import Updates from '../components/elements/Updates'
 import Board from '../components/elements/Board'
 import NameCard from '../components/elements/NameCard'
-import Chart from '../components/elements/Chart'
+import Chart from '../components/Chart/Chart'
 import './Overview.css'
 
 class Overview extends Component {

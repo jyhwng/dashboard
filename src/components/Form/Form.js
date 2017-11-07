@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import {Segment, Grid} from 'semantic-ui-react'
-import BasicForm from '../components/elements/BasicForm'
-import InputOptions from '../components/elements/InputOptions'
-import './Overview.css'
+import BasicForm from './BasicForm'
+import InputOptions from './InputOptions'
 
 class Forms extends Component {
     render() {

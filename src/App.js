@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Content from './components/Content'
+import Content from './containers/Content'
 import TopMenu from './components/TopMenu/TopMenu';
+import 'react-dates/initialize';
 
 class App extends Component {
     render() {

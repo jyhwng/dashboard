@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import {Menu, Header, Segment, Icon} from 'semantic-ui-react'
 import Overview from '../containers/Overview'
-import Forms from '../containers/Forms'
-import Footer from '../components/Footer'
+import Form from '../components/Form/Form'
+import Footer from '../components/Footer/Footer'
+import Calendar from '../components/Calendar/Calendar'
 import './Content.css'
 
 class Content extends Component {
@@ -20,7 +21,7 @@ class Content extends Component {
 
         const menuList = [
             { 'name': 'Dashboard', 'icon': 'home' },
-            { 'name': 'Forms', 'icon': 'checkmark box' },
+            { 'name': 'Form', 'icon': 'checkmark box' },
             { 'name': 'Calendar', 'icon': 'block layout' },
             { 'name': 'Options', 'icon': 'options' },
             { 'name': 'Page', 'icon': 'sticky note outline' },
@@ -37,9 +38,14 @@ class Content extends Component {
                     <Overview/>
                 )
                 break
-            case 'Forms':
+            case 'Form':
                 segmentContent = (
-                    <Forms/>
+                    <Form/>
+                )
+                break
+            case 'Calendar':
+                segmentContent = (
+                    <Calendar/>
                 )
                 break
             default:
