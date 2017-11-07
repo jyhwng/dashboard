@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {Menu, Header, Segment, Icon} from 'semantic-ui-react'
-import Overview from '../containers/Overview'
+import Overview from './Overview'
 import Form from '../components/Form/Form'
 import Footer from '../components/Footer/Footer'
 import Calendar from '../components/Calendar/Calendar'
-import './Content.css'
+import './MainContainer.css'
 
 class Content extends Component {
     constructor(props){
@@ -17,8 +17,6 @@ class Content extends Component {
     handleItemClick = (e, {name}) => this.setState({activeMenu: name})
 
     render() {
-        const {activeMenu} = this.state
-
         const menuList = [
             { 'name': 'Dashboard', 'icon': 'home' },
             { 'name': 'Form', 'icon': 'checkmark box' },
@@ -58,7 +56,7 @@ class Content extends Component {
             <Menu pointing secondary vertical className="side-menu">
                 {menuList.map((item) => {
                     return (
-                        <Menu.Item name={item['name']} active={activeMenu === item['name']}
+                        <Menu.Item name={item['name']} active={this.state.activeMenu === item['name']}
                             key={item['name']}
                             onClick={this.handleItemClick}>
                             <Icon name={item['icon']} size='large' style={iconStyle}/>
@@ -92,8 +90,8 @@ class Content extends Component {
                     {dashboardTitle}
                     <Segment basic>
                         {segmentContent}
+                        <Footer/>
                     </Segment>
-                    <Footer/>
                 </div>
             </div>
         )

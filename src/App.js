@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Content from './containers/Content'
+import MainContainer from './containers/MainContainer'
 import TopMenu from './components/TopMenu/TopMenu';
 import 'react-dates/initialize';
 
@@ -9,7 +9,7 @@ class App extends Component {
         return (
             <div className="App">
                 <TopMenu/>
-                <Content/>
+                <MainContainer/>
             </div>
         );
     }

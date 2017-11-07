@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import { Form } from 'semantic-ui-react'
-import './BasicForm.css'
 
 const options = [
   { key: 'm', text: 'Male', value: 'male' },
