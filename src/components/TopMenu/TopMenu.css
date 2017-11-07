@@ -3,10 +3,13 @@
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
+* {
+  font-family: 'Poppins', sans-serif; }
+
 .ui.basic.segment {
   background-color: #f8f8f8 !important;
-  border: 1px solid #e8e8ec !important;
-  margin-left: -0.6rem;
+  border: none !important;
+  border-top: 1px solid #e8e8ec !important;
   padding-right: 1.5rem; }
 
 .ui.card {
@@ -17,8 +20,8 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: #fff;
-  margin-bottom: 0; }
+  background-color: #fff !important;
+  margin-bottom: 0 !important; }
 
 .menu-logo {
   width: 200px; }

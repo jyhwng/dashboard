@@ -17,45 +17,43 @@ class TopMenu extends Component {
         }
 
         return (
-            <div className="top-menu">
-                <Menu pointing secondary>
-                    <Menu.Menu postion="left" className="menu-logo">
-                        <Menu.Item>
-                            <span>LOGO</span>
-                        </Menu.Item>
-                    </Menu.Menu>
+          <Menu pointing secondary className="top-menu">
+              <Menu.Menu postion="left" className="menu-logo">
+                  <Menu.Item>
+                      <span>LOGO</span>
+                  </Menu.Item>
+              </Menu.Menu>
 
-                    <Menu.Menu className="center menu">
-                        <Menu.Item name='inbox' active={activeItem === 'inbox'} onClick={this.handleItemClick}>
-                            <Icon name='inbox' size='large' style={iconStyle}/>
-                            <span>Home</span>
-                        </Menu.Item>
-                        <Menu.Item name='browser' active={activeItem === 'browser'} onClick={this.handleItemClick}>
-                            <Icon name='browser' size='large' style={iconStyle}/>
-                            <span>Datalab</span>
-                        </Menu.Item>
-                        <Menu.Item name='comment' active={activeItem === 'comment'} onClick={this.handleItemClick}>
-                            <Icon name='comment' size='large' style={iconStyle}/>
-                            <span>Portfolio</span>
-                        </Menu.Item>
-                    </Menu.Menu>
+              <Menu.Menu className="center menu">
+                  <Menu.Item name='inbox' active={activeItem === 'inbox'} onClick={this.handleItemClick}>
+                      <Icon name='inbox' size='large' style={iconStyle}/>
+                      <span>Home</span>
+                  </Menu.Item>
+                  <Menu.Item name='browser' active={activeItem === 'browser'} onClick={this.handleItemClick}>
+                      <Icon name='browser' size='large' style={iconStyle}/>
+                      <span>Datalab</span>
+                  </Menu.Item>
+                  <Menu.Item name='comment' active={activeItem === 'comment'} onClick={this.handleItemClick}>
+                      <Icon name='comment' size='large' style={iconStyle}/>
+                      <span>Portfolio</span>
+                  </Menu.Item>
+              </Menu.Menu>
 
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <TopSearch/>
-                        </Menu.Item>
-                        <Menu.Item name='notification' onClick={this.handleItemClick}>
-                            <Icon name='alarm outline' size='large' style={iconStyle}/>
-                        </Menu.Item>
-                        <Menu.Item name='message' onClick={this.handleItemClick}>
-                            <Icon name='comments outline' size='large' style={iconStyle}/>
-                        </Menu.Item>
-                        <Menu.Item name='setting' onClick={this.handleItemClick}>
-                            <MyPage/>
-                        </Menu.Item>
-                    </Menu.Menu>
-                </Menu>
-            </div>
+              <Menu.Menu position='right'>
+                  <Menu.Item>
+                      <TopSearch/>
+                  </Menu.Item>
+                  <Menu.Item name='notification' onClick={this.handleItemClick}>
+                      <Icon name='alarm outline' size='large' style={iconStyle}/>
+                  </Menu.Item>
+                  <Menu.Item name='message' onClick={this.handleItemClick}>
+                      <Icon name='comments outline' size='large' style={iconStyle}/>
+                  </Menu.Item>
+                  <Menu.Item name='setting' onClick={this.handleItemClick}>
+                      <MyPage/>
+                  </Menu.Item>
+              </Menu.Menu>
+          </Menu>
         )
     }
 }
