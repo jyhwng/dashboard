@@ -15,41 +15,10 @@
 .ui.card {
   width: 100% !important; }
 
-.left-menus {
-  position: fixed;
-  top: 67px;
-  width: 200px;
-  padding-right: 0 !important; }
-
 .main-container {
   margin-top: 67px;
   width: 100%;
   padding-left: 200px !important; }
-
-.ui.vertical.menu {
-  width: 100% !important;
-  font-family: 'Poppins', sans-serif; }
-  .ui.vertical.menu .item {
-    color: #4a4a4a !important;
-    text-align: left !important;
-    height: 3rem !important;
-    display: flex !important;
-    align-items: center !important; }
-  .ui.vertical.menu .active.item {
-    color: #3cbfc8 !important;
-    border-right: 4px solid #3cbfc8 !important;
-    background-color: #f8f8f8 !important;
-    font-weight: 400 !important; }
-  .ui.vertical.menu .side-menu-drop-down {
-    right: 10px;
-    position: absolute; }
-
-.side-menu {
-  font-size: 12px !important; }
-
-.ui.header {
-  text-align: left !important;
-  margin-left: 1rem !important; }
 
 .top-header {
   font-weight: 400;
@@ -60,3 +29,7 @@
     margin-top: 1rem !important;
     font-size: 10px !important;
     color: #9b9b9b !important; }
+
+.ui.header {
+  text-align: left !important;
+  margin-left: 1rem !important; }
