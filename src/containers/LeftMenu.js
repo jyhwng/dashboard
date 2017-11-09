@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
 import { Menu, Icon } from 'semantic-ui-react';
 import './LeftMenu.css';
 
@@ -14,8 +16,10 @@ class SubMenu extends Component {
         {menuList.map(menu => {
           return (
             <div key={menu['name']} className="sub-menu">
-              <Icon name="plus" size="small" style={iconStyle} />
-              <span>{menu['name']}</span>
+              <Link to={menu['name']}>
+                <Icon name="plus" size="small" style={iconStyle} />
+                <span>{menu['name']}</span>
+              </Link>
             </div>
           );
         })}
@@ -45,12 +49,12 @@ class LeftMenu extends Component {
       {
         name: 'Dashboard',
         icon: 'inbox',
-        submenus: [{ name: 'Update' }, { name: 'Status' }]
+        submenus: [{ name: 'dashboard' }, { name: 'Status' }]
       },
       {
         name: 'Form',
         icon: 'checkmark box',
-        submenus: [{ name: 'Form1' }, { name: 'Form2' }]
+        submenus: [{ name: 'form' }, { name: 'Form2' }]
       },
       {
         name: 'Calendar',
