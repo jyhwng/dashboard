@@ -8,19 +8,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.main-container {
-  margin-top: 67px;
-  width: 100%;
-  padding: 0 20px 20px 220px !important;
-}
-
-.ui.basic.segment {
-  background-color: #f8f8f8 !important;
-  border: none !important;
-  border-top: 1px solid #e8e8ec !important;
-  padding-right: 1.5rem;
-}
-
 .ui.card {
   width: 100% !important;
 }
@@ -30,9 +17,13 @@
   color: #4a4a4a;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.8rem;
 }
-.top-header .sub-header {
-  margin-top: 1rem !important;
-  font-size: 10px !important;
+
+.sub-header {
+  margin-bottom: 1rem;
   color: #9b9b9b !important;
+}
+.sub-header h5 {
+  font-size: 10px;
 }

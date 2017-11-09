@@ -4,15 +4,16 @@ import './Header.css';
 
 class Header extends Component {
   render() {
+    let title = this.props.name;
     return (
       <div>
-        <h2 className="top-header">{this.props.name}</h2>
+        <h2 className="top-header">{title}</h2>
         <div className="sub-header">
           <h5>
             <Icon name="calendar outline" />
-            {this.props.name} &emsp; / &emsp;
+            {title} &emsp; / &emsp;
             <Icon name="calendar outline" />
-            {this.props.name}
+            {title}
           </h5>
         </div>
       </div>

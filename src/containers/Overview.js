@@ -7,12 +7,14 @@ import NameCard from '../components/elements/NameCard';
 import Chart from '../components/Chart/Chart';
 import Header from '../components/Header/Header';
 import './Overview.css';
+import './MainContainer.css';
 
 class Overview extends Component {
   render() {
+    let pathname = this.props.location.pathname;
     return (
       <div className="main-container">
-        <Header name="Dashboard" />
+        <Header name={pathname} />
         <Grid columns="equal">
           <Updates />
           <Grid.Row>

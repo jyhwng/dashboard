@@ -8,19 +8,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.main-container {
-  margin-top: 67px;
-  width: 100%;
-  padding: 0 20px 20px 220px !important;
-}
-
-.ui.basic.segment {
-  background-color: #f8f8f8 !important;
-  border: none !important;
-  border-top: 1px solid #e8e8ec !important;
-  padding-right: 1.5rem;
-}
-
 .ui.card {
   width: 100% !important;
 }
@@ -30,6 +17,7 @@
   top: 67px;
   width: 200px;
   padding-right: 0 !important;
+  background-color: #fff;
 }
 
 .ui.vertical.menu {

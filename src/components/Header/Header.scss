@@ -5,10 +5,13 @@
     color: #4a4a4a;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    .sub-header {
-        margin-top: 1rem !important;
-    	font-size: 10px !important;
-    	color: #9b9b9b !important;
+    margin-bottom: 0.8rem;
+}
+.sub-header {
+    margin-bottom: 1rem;
+    color: #9b9b9b !important;
+    h5 {
+        font-size: 10px;
     }
 }
 
