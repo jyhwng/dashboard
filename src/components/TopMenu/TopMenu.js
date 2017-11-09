@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import { Menu, Icon, Dropdown } from 'semantic-ui-react';
 import TopSearch from './TopSearch';
 import MyMenu from './MyMenu';
@@ -21,7 +22,7 @@ class TopMenu extends Component {
       <Menu pointing secondary className="top-menu">
         <Menu.Menu postion="left" className="menu-logo">
           <Menu.Item>
-            <h3>AllNone</h3>
+            <Link to="dashboard">AllNone</Link>
           </Menu.Item>
         </Menu.Menu>
 

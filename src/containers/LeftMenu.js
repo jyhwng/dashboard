@@ -32,7 +32,7 @@ class LeftMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMenu: 'Form'
+      activeMenu: 'Dashboard'
     };
   }
 
@@ -91,7 +91,9 @@ class LeftMenu extends Component {
                   >
                     <Icon name={item['icon']} size="large" style={iconStyle} />
                     <span>{item['name']}</span>
-                    <Icon name="angle down" className="side-menu-drop-down" />
+                    {item['submenus'].length === 0 ? null : (
+                      <Icon name="angle down" className="side-menu-drop-down" />
+                    )}
                   </Menu.Item>
                   <div
                     className={

@@ -11,6 +11,12 @@
 
 .menu-logo {
     width: 200px;
+    display: flex;
+    justify-content: center;
+    .item a {
+        color: $lightBlue;
+        font-weight: 600;
+    }
 }
 
 .ui.menu .item {

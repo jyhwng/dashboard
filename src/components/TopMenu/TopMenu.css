@@ -23,6 +23,12 @@
 
 .menu-logo {
   width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.menu-logo .item a {
+  color: #3cbfc8;
+  font-weight: 600;
 }
 
 .ui.menu .item {

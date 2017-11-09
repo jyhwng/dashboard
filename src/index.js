@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import './index.css';
 import App from './App';
-import Overview from './containers/Overview';
+import Dashboard from './containers/Dashboard';
 import Form from './components/Form/Form';
 import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
@@ -12,8 +12,8 @@ import 'semantic-ui-css/semantic.min.css';
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Overview} />
-      <Route path="dashboard" component={Overview} />
+      <IndexRoute component={Dashboard} />
+      <Route path="dashboard" component={Dashboard} />
       <Route path="form" component={Form} />
     </Route>
   </Router>,

@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     let title = this.props.name;
     return (
-      <div>
+      <div className="header-container">
         <h2 className="top-header">{title}</h2>
         <div className="sub-header">
           <h5>

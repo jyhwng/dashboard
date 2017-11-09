@@ -2,10 +2,12 @@
 
 .left-menus {
   position: fixed;
-  top: 67px;
   width: 200px;
   padding-right: 0 !important;
   background-color: #fff;
+  height: 100%;
+  padding-top: 20px;
+  top: 47px;
 }
 
 .ui.vertical.menu {
@@ -40,11 +42,12 @@
       display: block;
       transition: 0.3s all ease;
       .sub-menu {
+        text-transform: capitalize;
         transition: 0.3s all ease;
         font-size: 0.75rem;        
         padding: .5em 1.14285714em .5em 3em;
-        span {
-          cursor: pointer;
+        a {
+          color: #4a4a4a;
         }
       }
     }

@@ -5,16 +5,13 @@ import Activity from '../components/elements/Activity';
 import Board from '../components/elements/Board';
 import NameCard from '../components/elements/NameCard';
 import Chart from '../components/Chart/Chart';
-import Header from '../components/Header/Header';
-import './Overview.css';
+import './Dashboard.css';
 import './MainContainer.css';
 
-class Overview extends Component {
+class Dashboard extends Component {
   render() {
-    let pathname = this.props.location.pathname;
     return (
       <div className="main-container">
-        <Header name={pathname} />
         <Grid columns="equal">
           <Updates />
           <Grid.Row>
@@ -37,4 +34,4 @@ class Overview extends Component {
   }
 }
 
-export default Overview;
+export default Dashboard;
