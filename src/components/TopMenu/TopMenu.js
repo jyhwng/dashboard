@@ -27,11 +27,11 @@ class TopMenu extends Component {
 
         <Menu.Menu className="center menu">
           <Menu.Item
-            name="inbox"
-            active={activeItem === 'inbox'}
+            name="home"
+            active={activeItem === 'home'}
             onClick={this.handleItemClick}
           >
-            <Icon name="inbox" size="large" style={iconStyle} />
+            <Icon name="home" size="large" style={iconStyle} />
             <span>Home</span>
           </Menu.Item>
 

@@ -6,14 +6,22 @@ import './LeftMenu.css';
 class SubMenu extends Component {
   render() {
     let menuList = this.props.menu;
-    console.log(menuList);
+
+    let iconStyle = {
+      marginRight: '10px'
+    };
+
     return (
-      <div />
-      // {menuList.map((menu) => {
-      //   return (
-      //     <div>{menu}</div>
-      //   )
-      // })}
+      <div>
+        {menuList.map(menu => {
+          return (
+            <div key={menu['name']} className="sub-menu">
+              <Icon name="plus" size="small" style={iconStyle} />
+              <span>{menu['name']}</span>
+            </div>
+          );
+        })}
+      </div>
     );
   }
 }
@@ -22,27 +30,45 @@ class LeftMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMenu: 'Dashboard'
+      activeMenu: ''
     };
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeMenu: name });
+  handleItemClick = (e, { name }) => {
+    if (this.state.activeMenu === name) {
+      this.setState({ activeMenu: '' });
+    } else {
+      this.setState({ activeMenu: name });
+    }
+  };
 
   render() {
     const menuList = [
       {
         name: 'Dashboard',
-        icon: 'home',
-        submenus: ['update', 'status']
+        icon: 'inbox',
+        submenus: [{ name: 'Update' }, { name: 'Status' }]
       },
       {
         name: 'Form',
         icon: 'checkmark box',
-        submenus: ['test', 'calendar']
+        submenus: [{ name: 'Form1' }, { name: 'Form2' }]
       },
-      { name: 'Calendar', icon: 'block layout' },
-      { name: 'Options', icon: 'options' },
-      { name: 'Page', icon: 'sticky note outline' }
+      {
+        name: 'Calendar',
+        icon: 'block layout',
+        submenus: []
+      },
+      {
+        name: 'Options',
+        icon: 'options',
+        submenus: []
+      },
+      {
+        name: 'Page',
+        icon: 'sticky note outline',
+        submenus: []
+      }
     ];
 
     let iconStyle = {
@@ -55,11 +81,10 @@ class LeftMenu extends Component {
           <Menu pointing secondary vertical className="side-menu">
             {menuList.map(item => {
               return (
-                <div>
+                <div key={item['name']}>
                   <Menu.Item
                     name={item['name']}
                     active={this.state.activeMenu === item['name']}
-                    key={item['name']}
                     onClick={this.handleItemClick}
                   >
                     <Icon name={item['icon']} size="large" style={iconStyle} />
