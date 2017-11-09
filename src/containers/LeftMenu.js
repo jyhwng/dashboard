@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
-import MainContainer from './MainContainer';
 import './LeftMenu.css';
 
 class SubMenu extends Component {
@@ -103,7 +102,6 @@ class LeftMenu extends Component {
             })}
           </Menu>
         </div>
-        <MainContainer activeMenu={this.state.activeMenu} />
       </div>
     );
   }

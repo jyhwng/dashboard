@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Feed } from 'semantic-ui-react';
-import ProfileImage from '../images/steve.jpg';
+import ProfileImage from '../../images/steve.jpg';
 
 class Activity extends Component {
   render() {

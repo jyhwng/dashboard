@@ -8,21 +8,6 @@ import './MainContainer.css';
 
 class MainContainer extends Component {
   render() {
-    let segmentContent;
-    switch (this.props.activeMenu) {
-      case 'Dashboard':
-        segmentContent = <Overview />;
-        break;
-      case 'Form':
-        segmentContent = <Form />;
-        break;
-      case 'Calendar':
-        segmentContent = <Calendar />;
-        break;
-      default:
-        segmentContent = this.props.activeMenu;
-    }
-
     let dashboardTitle = (
       <Header as="h2">
         <Header.Content className="top-header">
@@ -41,7 +26,6 @@ class MainContainer extends Component {
       <div className="main-container">
         {dashboardTitle}
         <Segment basic>
-          {segmentContent}
           <Footer />
         </Segment>
       </div>

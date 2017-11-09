@@ -8,6 +8,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.main-container {
+  margin-top: 67px;
+  width: 100%;
+  padding: 0 20px 20px 220px !important;
+}
+
 .ui.basic.segment {
   background-color: #f8f8f8 !important;
   border: none !important;

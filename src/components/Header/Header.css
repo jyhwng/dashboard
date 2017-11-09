@@ -25,10 +25,14 @@
   width: 100% !important;
 }
 
-.recharts-cartesian-grid .recharts-cartesian-grid-vertical {
-  display: none;
+.top-header {
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
-
-.recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick text {
-  fill: #9b9b9b;
+.top-header .sub-header {
+  margin-top: 1rem !important;
+  font-size: 10px !important;
+  color: #9b9b9b !important;
 }

@@ -1,16 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 .App {
   font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 * {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  margin-top: 67px;
+  width: 100%;
+  padding: 0 20px 20px 220px !important;
+}
 
 .ui.basic.segment {
   background-color: #f8f8f8 !important;
   border: none !important;
   border-top: 1px solid #e8e8ec !important;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+}
 
 .ui.card {
-  width: 100% !important; }
+  width: 100% !important;
+}
