@@ -1,0 +1,16 @@
+@import "../../App.scss";
+
+.new-notification {
+    position: absolute;
+    top: -7px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: $lightBlue;
+    color: #fff;
+    text-align: center;    
+    span {
+
+    }
+}

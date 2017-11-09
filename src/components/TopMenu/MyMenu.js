@@ -3,7 +3,7 @@ import { Dropdown, Icon } from 'semantic-ui-react';
 
 const trigger = (
   <span>
-    <Icon name="user" /> soonbeom24
+    <Icon name="user" /> blendx2017
   </span>
 );
 
@@ -12,7 +12,7 @@ const options = [
     key: 'user',
     text: (
       <span>
-        Signed in as <strong>soonbeom24</strong>
+        Signed in as <strong>blendx2017</strong>
       </span>
     ),
     disabled: true
