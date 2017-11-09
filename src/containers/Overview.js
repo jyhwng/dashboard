@@ -18,7 +18,6 @@ class Overview extends Component {
             </Grid.Column>
             <Grid.Column width={11}>
               <Segment className="chart-container">
-                <h3>Statistics title</h3>
                 <Chart />
               </Segment>
             </Grid.Column>
