@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Segment, Grid } from 'semantic-ui-react';
 import BasicForm from './BasicForm';
-import InputOptions from './InputOptions';
+import TextareaForm from './TextareaForm';
+import InputForm from './InputForm';
 
 class Forms extends Component {
   render() {
@@ -9,16 +10,21 @@ class Forms extends Component {
       <div>
         <Grid columns="equal">
           <Grid.Row>
-            <Grid.Column width={16}>
+            <Grid.Column width={8}>
               <Segment>
-                <BasicForm />
+                <InputForm />
+              </Segment>
+            </Grid.Column>
+            <Grid.Column width={8}>
+              <Segment>
+                <TextareaForm />
               </Segment>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
             <Grid.Column width={16}>
               <Segment>
-                <InputOptions />
+                <BasicForm />
               </Segment>
             </Grid.Column>
           </Grid.Row>

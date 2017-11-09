@@ -6,7 +6,6 @@ import './LeftMenu.css';
 class SubMenu extends Component {
   render() {
     let menuList = this.props.menu;
-
     let iconStyle = {
       marginRight: '10px'
     };
@@ -30,7 +29,7 @@ class LeftMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMenu: ''
+      activeMenu: 'Form'
     };
   }
 

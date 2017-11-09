@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.App {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ui.basic.segment {
+  background-color: #f8f8f8 !important;
+  border: none !important;
+  border-top: 1px solid #e8e8ec !important;
+  padding-right: 1.5rem;
+}
+
+.ui.card {
+  width: 100% !important;
+}
+
+.input-form {
+  font-size: 12px;
+}
