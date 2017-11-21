@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Segment, Grid } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
+import MainContainer from '../../containers/MainContainer';
 import './Footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <Segment className="fixed-footer-container">
+      <MainContainer>
         <Grid className="fixed-footer">
           <Grid.Column width={8}>
             <h1>CHECK OUT PRESELECTED DEMOS</h1>
@@ -19,7 +20,6 @@ class Footer extends Component {
           <Grid.Column width={8}>
             <h1>CHECK OUT PRESELECTED DEMOS</h1>
             <Grid.Row columns={2}>
-              <Grid.Column />
               <Grid.Column>
                 Clean UI – a modern professional admin template, based on
                 Bootstrap 4 framework. Clean UI is a powerful and super flexible
@@ -36,7 +36,7 @@ class Footer extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Segment>
+      </MainContainer>
     );
   }
 }

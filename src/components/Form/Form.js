@@ -4,7 +4,6 @@ import { Segment, Grid } from 'semantic-ui-react';
 import BasicForm from './BasicForm';
 import TextareaForm from './TextareaForm';
 import InputForm from './InputForm';
-import '../../containers/MainContainer.css';
 
 class Forms extends Component {
   render() {

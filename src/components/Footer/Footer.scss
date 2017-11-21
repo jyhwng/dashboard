@@ -1,16 +1,7 @@
 @import "../../App.scss";
 
-.fixed-footer-container {
-    margin-left: 200px !important;
-    margin-top: 0 !important;
-    padding: 2.5rem !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background-color: #f8f8f8 !important;
-}
-
 .fixed-footer {
+    margin: -1rem 0 50px 0 !important;
     padding: 1.5rem 1rem !important;
     border-radius: 4px;
     background-color: $lightBlue;

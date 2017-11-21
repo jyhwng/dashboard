@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MainContainer from './MainContainer';
 import { Segment, Grid } from 'semantic-ui-react';
-import Updates from '../components/elements/Updates';
 import Activity from '../components/elements/Activity';
 import Board from '../components/elements/Board';
 import NameCard from '../components/elements/NameCard';
@@ -13,7 +12,6 @@ class Dashboard extends Component {
     return (
       <MainContainer>
         <Grid columns="equal">
-          <Updates />
           <Grid.Row>
             <Grid.Column width={5}>
               <Activity />
