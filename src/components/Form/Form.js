@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MainContainer from '../../containers/MainContainer';
 import { Segment, Grid } from 'semantic-ui-react';
 import BasicForm from './BasicForm';
 import TextareaForm from './TextareaForm';
@@ -8,7 +9,7 @@ import '../../containers/MainContainer.css';
 class Forms extends Component {
   render() {
     return (
-      <div className="main-container">
+      <MainContainer>
         <Grid columns="equal">
           <Grid.Row>
             <Grid.Column width={8}>
@@ -30,7 +31,7 @@ class Forms extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </div>
+      </MainContainer>
     );
   }
 }

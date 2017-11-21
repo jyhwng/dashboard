@@ -8,12 +8,11 @@ import 'react-dates/initialize';
 
 class App extends Component {
   render() {
-    const pathname = this.props.children.type.name;
     return (
       <div className="App">
         <TopMenu />
         <LeftMenu />
-        <Header name={pathname} />
+        <Header />
         {this.props.children}
         <Footer />
       </div>

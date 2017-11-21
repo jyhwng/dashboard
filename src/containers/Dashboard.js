@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MainContainer from './MainContainer';
 import { Segment, Grid } from 'semantic-ui-react';
 import Updates from '../components/elements/Updates';
 import Activity from '../components/elements/Activity';
@@ -6,12 +7,11 @@ import Board from '../components/elements/Board';
 import NameCard from '../components/elements/NameCard';
 import Chart from '../components/Chart/Chart';
 import './Dashboard.css';
-import './MainContainer.css';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div className="main-container">
+      <MainContainer>
         <Grid columns="equal">
           <Updates />
           <Grid.Row>
@@ -29,7 +29,7 @@ class Dashboard extends Component {
           </Grid.Row>
         </Grid>
         <Board />
-      </div>
+      </MainContainer>
     );
   }
 }
