@@ -11,6 +11,9 @@ import 'semantic-ui-css/semantic.min.css';
 
 const AsyncDashboard = asyncComponent(() => import('./containers/Dashboard'));
 const AsyncForm = asyncComponent(() => import('./components/Form/Form'));
+const AsyncDropdown = asyncComponent(() =>
+  import('./components/Form/Dropdown')
+);
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -18,6 +21,7 @@ ReactDOM.render(
       <IndexRoute exact component={AsyncDashboard} />
       <Route path="dashboard" exact component={AsyncDashboard} />
       <Route path="form" exact component={AsyncForm} />
+      <Route path="dropdown" exact component={AsyncDropdown} />
     </Route>
   </Router>,
   document.getElementById('root')

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 import { Icon } from 'semantic-ui-react';
 import './Header.css';
 
 class Header extends Component {
   render() {
-    let title = this.props.name;
+    const title = browserHistory.getCurrentLocation().pathname.split('/')[1];
     return (
       <div className="header-container">
         <h2 className="top-header">{title}</h2>

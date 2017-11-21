@@ -6,19 +6,19 @@ import './LeftMenu.css';
 
 class SubMenu extends Component {
   render() {
-    let menuList = this.props.menu;
+    let subMenu = this.props.submenu;
     let iconStyle = {
       marginRight: '10px'
     };
 
     return (
       <div>
-        {menuList.map(menu => {
+        {subMenu.map(submenu => {
           return (
-            <div key={menu['name']} className="sub-menu">
-              <Link to={menu['name']}>
+            <div key={submenu.name} className="sub-menu">
+              <Link to={submenu.name}>
                 <Icon name="plus" size="small" style={iconStyle} />
-                <span>{menu['name']}</span>
+                <span>{submenu.name}</span>
               </Link>
             </div>
           );
@@ -47,27 +47,27 @@ class LeftMenu extends Component {
   render() {
     const menuList = [
       {
-        name: 'Dashboard',
+        name: 'dashboard',
         icon: 'inbox',
-        submenus: [{ name: 'dashboard' }, { name: 'Status' }]
+        submenus: [{ name: 'dashboard' }, { name: 'status' }]
       },
       {
-        name: 'Form',
+        name: 'form',
         icon: 'checkmark box',
-        submenus: [{ name: 'form' }, { name: 'Form2' }]
+        submenus: [{ name: 'form' }, { name: 'dropdown' }]
       },
       {
-        name: 'Calendar',
+        name: 'calendar',
         icon: 'block layout',
         submenus: []
       },
       {
-        name: 'Options',
+        name: 'options',
         icon: 'options',
         submenus: []
       },
       {
-        name: 'Page',
+        name: 'page',
         icon: 'sticky note outline',
         submenus: []
       }
@@ -78,36 +78,34 @@ class LeftMenu extends Component {
     };
 
     return (
-      <div>
-        <div className="left-menus">
-          <Menu pointing secondary vertical className="side-menu">
-            {menuList.map(item => {
-              return (
-                <div key={item['name']}>
-                  <Menu.Item
-                    name={item['name']}
-                    active={this.state.activeMenu === item['name']}
-                    onClick={this.handleItemClick}
-                  >
-                    <Icon name={item['icon']} size="large" style={iconStyle} />
-                    <span>{item['name']}</span>
-                    {item['submenus'].length === 0 ? null : (
-                      <Icon name="angle down" className="side-menu-drop-down" />
-                    )}
-                  </Menu.Item>
-                  <div
-                    className={
-                      'sub-menu-container ' +
-                      (this.state.activeMenu === item['name'] ? 'active' : '')
-                    }
-                  >
-                    <SubMenu menu={item['submenus']} />
-                  </div>
+      <div className="left-menus">
+        <Menu pointing secondary vertical className="side-menu">
+          {menuList.map(item => {
+            return (
+              <div key={item.name}>
+                <Menu.Item
+                  name={item.name}
+                  active={this.state.activeMenu === item.name}
+                  onClick={this.handleItemClick}
+                >
+                  <Icon name={item.icon} size="large" style={iconStyle} />
+                  <span>{item.name}</span>
+                  {item.submenus.length === 0 ? null : (
+                    <Icon name="angle down" className="side-menu-drop-down" />
+                  )}
+                </Menu.Item>
+                <div
+                  className={
+                    'sub-menu-container ' +
+                    (this.state.activeMenu === item.name ? 'active' : '')
+                  }
+                >
+                  <SubMenu submenu={item.submenus} />
                 </div>
-              );
-            })}
-          </Menu>
-        </div>
+              </div>
+            );
+          })}
+        </Menu>
       </div>
     );
   }
