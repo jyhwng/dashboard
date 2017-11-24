@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@import "../../styles/_common.scss";
 
 .new-notification {
     position: absolute;
@@ -7,7 +7,7 @@
     width: 16px;
     height: 16px;
     border-radius: 16px;
-    background-color: $lightBlue;
+    background-color: $lightGreen;
     color: #fff;
     text-align: center;    
     span {

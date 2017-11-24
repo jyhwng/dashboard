@@ -1,10 +1,10 @@
-@import "../../App.scss";
+@import "../../styles/_common.scss";
 
 .fixed-footer {
     margin: -1rem 0 50px 0 !important;
     padding: 1.5rem 1rem !important;
     border-radius: 4px;
-    background-color: $lightBlue;
+    background-color: $lightGreen;
     color: #fff;
 }
 

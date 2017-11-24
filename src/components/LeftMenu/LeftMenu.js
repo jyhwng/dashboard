@@ -48,7 +48,7 @@ class LeftMenu extends Component {
       {
         name: 'dashboard',
         icon: 'inbox',
-        submenus: [{ name: 'dashboard' }, { name: 'status' }]
+        submenus: []
       },
       {
         name: 'form',
@@ -56,7 +56,7 @@ class LeftMenu extends Component {
         submenus: [
           { name: 'form' },
           { name: 'dropdowns' },
-          { name: 'range picker' }
+          { name: 'range-picker' }
         ]
       },
       {
@@ -67,7 +67,12 @@ class LeftMenu extends Component {
       {
         name: 'layout',
         icon: 'grid layout',
-        submenus: [{ name: 'accordion' }]
+        submenus: [
+          { name: 'accordion' },
+          { name: 'pagination' },
+          { name: 'badge' },
+          { name: 'modal' }
+        ]
       },
       {
         name: 'charts',

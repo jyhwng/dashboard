@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@import "../../styles/_common.scss";
 
 .left-menus {
   position: fixed;
@@ -21,8 +21,8 @@
         align-items: center !important;
     }
     .active.item {
-        color: $lightBlue !important;
-        border-right: 4px solid $lightBlue !important;
+        color: $lightGreen !important;
+        border-right: 4px solid $lightGreen !important;
         background-color: #f8f8f8 !important;
         font-weight: 400 !important;
     }
