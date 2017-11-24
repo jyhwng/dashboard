@@ -12,7 +12,7 @@
     "prettier": "^1.8.1",
     "react": "^16.0.0",
     "react-addons-shallow-compare": "^15.6.2",
-    "react-dates": "^15.0.0",
+    "react-big-calendar": "^0.17.0",
     "react-dom": "^16.0.0",
     "react-router": "^3.2.0",
     "react-scripts": "1.0.14",
