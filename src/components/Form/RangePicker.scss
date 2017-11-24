@@ -53,12 +53,14 @@
         margin: 0;
     }
     .scale {
-        width: 100%;
+        margin: 0 1.5%;
+        width: 97%;
         height: 8px;
-        background: -webkit-linear-gradient(left, #e8e8ec 1%, transparent 1%);
+        background: -webkit-linear-gradient(left, #e8e8ec 2%, transparent 1%),
+            -webkit-linear-gradient(left, #e8e8ec 4%, transparent 1%);
         background-position: 2px 100%;
         background-repeat: repeat-x;
-        background-size: 10% 8px;
+        background-size: 10% 8px, 5% 4px;
     }
 }
 

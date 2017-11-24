@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import { SingleDatePicker } from 'react-dates';
-import moment from 'moment';
-import momentPropTypes from 'react-moment-proptypes';
-import PropTypes from 'prop-types';
+import MainContainer from '../../containers/MainContainer';
+import { Segment, Grid } from 'semantic-ui-react';
+import DateRange from './DateRange';
+import SingleDate from './SingleDate';
+import './Calendar.css';
 
 class Calendar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      date: momentPropTypes.momentObj,
-      focused: PropTypes.bool
-    };
-  }
   render() {
     return (
-      <div />
-      // <SingleDatePicker
-      //   date={this.state.date} // momentPropTypes.momentObj or null
-      //   onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
-      //   focused={this.state.focused} // PropTypes.bool
-      //   onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
-      // />
+      <MainContainer>
+        <Grid columns="equal">
+          <Grid.Row>
+            <Grid.Column>
+              <Segment className="single-date-picker-wrapper">
+                <SingleDate />
+              </Segment>
+            </Grid.Column>
+            <Grid.Column>
+              <Segment className="single-date-picker-wrapper">
+                <DateRange />
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </MainContainer>
     );
   }
 }

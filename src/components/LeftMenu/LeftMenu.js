@@ -108,7 +108,7 @@ class LeftMenu extends Component {
                     (this.state.activeMenu === item.name ? 'active' : '')
                   }
                 >
-                  <SubMenu submenu={item.submenus} />
+                  <SubMenu submenu={item.submenus} menu={item} />
                 </div>
               </div>
             );

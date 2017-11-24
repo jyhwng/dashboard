@@ -1,0 +1,5 @@
+@import '../../styles/_common.scss';
+
+.single-date-picker-wrapper {
+  height: 400px;
+}

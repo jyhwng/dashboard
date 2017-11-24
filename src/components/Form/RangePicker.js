@@ -6,6 +6,9 @@ import './RangePicker.css';
 class RangePicker extends Component {
   render() {
     let dataPercent = 56;
+    const rangePickerStyle = {
+      width: '80%'
+    };
     const barStyle = {
       width: dataPercent.toString() + '%'
     };
@@ -16,7 +19,7 @@ class RangePicker extends Component {
       left: dataPercent.toString() + '%'
     };
     // const scale = [0, ... , 100]
-
+    // https://developer.mozilla.org/en-US/docs/Web/Events/dragstart
     return (
       <MainContainer>
         <Grid columns="equal">
@@ -24,7 +27,7 @@ class RangePicker extends Component {
             <Grid.Column>
               <Segment>
                 <p>Default Range picker</p>
-                <div className="range-picker">
+                <div className="range-picker" style={rangePickerStyle}>
                   <div
                     className="bar"
                     data-percent={dataPercent}
