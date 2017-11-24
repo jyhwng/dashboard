@@ -14,6 +14,9 @@ const AsyncForm = asyncComponent(() => import('./components/Form/Form'));
 const AsyncDropdowns = asyncComponent(() =>
   import('./components/Form/Dropdowns')
 );
+const AsyncRangePicker = asyncComponent(() =>
+  import('./components/Form/RangePicker')
+);
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -22,6 +25,7 @@ ReactDOM.render(
       <Route path="dashboard" exact component={AsyncDashboard} />
       <Route path="form" exact component={AsyncForm} />
       <Route path="dropdowns" exact component={AsyncDropdowns} />
+      <Route path="range-picker" exact component={AsyncRangePicker} />
     </Route>
   </Router>,
   document.getElementById('root')
