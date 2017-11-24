@@ -9,8 +9,8 @@ BigCalendar.momentLocalizer(moment);
 
 class FullCalendar extends Component {
   render() {
-    let views = ['month', 'week', 'day'];
-    let messages = {
+    const views = ['month', 'week', 'day'];
+    const messages = {
       previous: 'back',
       next: 'next'
     };

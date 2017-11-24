@@ -1,6 +1,79 @@
 @import "../../styles/_common.scss";
 
-.DayPickerNavigation_leftButton__horizontal,
-.DayPickerNavigation_rightButton__horizontal {
-    border: none;
+.date-range-wrapper {
+    .rbc-calendar {
+        width: 290px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 20px 0 rgba(185, 188, 210, 0.2);
+        border: solid 1px #e8e8ec;
+        .rbc-toolbar {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e8e8ec;
+            margin-bottom: 0;
+            .rbc-btn-group {
+                button {
+                    cursor: pointer;
+                    border-radius: 4px;
+                    margin-left: 8px;
+                    font-size: 10px;
+                    background-color: #f8f8f8;
+                    color: #9b9b9b;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;                
+                }
+                button.rbc-active {
+                    background-color: $lightGreen;
+                    color: #ffffff;
+                    outline: none;
+                }
+            }
+            .rbc-btn-group:first-child {
+                button:last-child:before {
+                }
+            }
+            .rbc-toolbar-label {
+                font-size: 16px;
+            }
+            .rbc-btn-group:last-child {
+            }
+        }
+        .rbc-month-view {
+            border: none;
+            padding: 8px;            
+            .rbc-row.rbc-month-header {
+                .rbc-header {
+                    border: none;
+                    height: 31px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    span {
+                        font-size: 12px;
+                        color: #4a4a4a;
+                    }
+                }
+            }
+            .rbc-month-row {
+                border: none;
+                .rbc-row-content {
+                    .rbc-row {
+                        background: #fff;                        
+                        .rbc-date-cell {
+                            height: 33px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #4a4a4a;
+                            padding: 8px;
+                        }
+                        .rbc-date-cell.rbc-now {
+                            background-color: #d8f3f4;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
