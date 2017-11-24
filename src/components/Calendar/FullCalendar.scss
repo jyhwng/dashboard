@@ -1,0 +1,71 @@
+@import "../../styles/_common.scss";
+
+.full-calendar-wrapper {
+    .rbc-calendar {
+        .rbc-toolbar {
+            margin-bottom: 25px;
+            .rbc-btn-group {
+                button {
+                    cursor: pointer;
+                    border-radius: 4px;
+                    margin-left: 8px;
+                    font-size: 10px;
+                    background-color: #f8f8f8;
+                    color: #9b9b9b;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;                
+                }
+                button.rbc-active {
+                    background-color: $lightGreen;
+                    color: #ffffff;
+                    outline: none;
+                }
+            }
+            .rbc-btn-group:first-child {
+                button:last-child:before {
+                    // content: "\F107";
+                }
+            }
+            .rbc-toolbar-label {
+                font-size: 22px;
+                color: #4a4a4a;
+                // width: 100%;
+                flex-grow: 1;
+            }
+            .rbc-btn-group:last-child {
+                // width: 173px;
+            }
+        }
+        .rbc-month-view {
+            .rbc-row.rbc-month-header {
+                .rbc-header {
+                    height: 31px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    span {
+                        font-size: 14px;
+                        color: #4a4a4a;
+                    }
+                }
+            }
+            .rbc-month-row {
+                .rbc-row-content {
+                    .rbc-row {
+                        .rbc-date-cell {
+                            height: 97px;
+                            text-align: left;
+                            font-size: 14px;
+                            color: #4a4a4a;
+                            padding: 8px;
+                        }
+                        .rbc-date-cell.rbc-now {
+                            background-color: #d8f3f4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

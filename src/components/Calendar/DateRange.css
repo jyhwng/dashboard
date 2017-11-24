@@ -1,1 +1,4 @@
-
+.DayPickerNavigation_leftButton__horizontal,
+.DayPickerNavigation_rightButton__horizontal {
+  border: none;
+}
