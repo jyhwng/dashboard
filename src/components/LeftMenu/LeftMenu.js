@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-
 import { Menu, Icon } from 'semantic-ui-react';
 import './LeftMenu.css';
 
@@ -54,21 +53,25 @@ class LeftMenu extends Component {
       {
         name: 'form',
         icon: 'checkmark box',
-        submenus: [{ name: 'form' }, { name: 'dropdown' }]
+        submenus: [
+          { name: 'form' },
+          { name: 'dropdowns' },
+          { name: 'range picker' }
+        ]
       },
       {
         name: 'calendar',
-        icon: 'block layout',
+        icon: 'calendar check',
         submenus: []
       },
       {
-        name: 'options',
-        icon: 'options',
-        submenus: []
+        name: 'layout',
+        icon: 'grid layout',
+        submenus: [{ name: 'accordion' }]
       },
       {
-        name: 'page',
-        icon: 'sticky note outline',
+        name: 'charts',
+        icon: 'bar chart',
         submenus: []
       }
     ];

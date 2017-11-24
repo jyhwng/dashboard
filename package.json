@@ -18,7 +18,8 @@
     "react-scripts": "1.0.14",
     "recharts": "^1.0.0-alpha.6",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.75.1"
+    "semantic-ui-react": "^0.75.1",
+    "surge": "^0.19.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

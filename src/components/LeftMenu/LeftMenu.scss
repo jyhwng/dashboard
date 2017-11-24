@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import "../../App.scss";
 
 .left-menus {
   position: fixed;
@@ -34,6 +34,9 @@
 
 .side-menu {
     font-size: 12px !important;
+    .item {
+      text-transform: capitalize !important;
+    }
     .sub-menu-container {
       display: none;
       transition: 0.3s all ease;

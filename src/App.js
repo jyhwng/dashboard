@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import LeftMenu from './containers/LeftMenu';
+import LeftMenu from './components/LeftMenu/LeftMenu';
 import TopMenu from './components/TopMenu/TopMenu';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';

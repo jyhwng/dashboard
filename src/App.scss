@@ -1,13 +1,7 @@
 @import "./styles/_variables.scss";
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .App {
-    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-
-* {
-    font-family: 'Poppins', sans-serif;
 }
 
 .ui.card {

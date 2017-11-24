@@ -74,7 +74,7 @@ class TopMenu extends Component {
             <Notification />
           </Menu.Item>
           <Menu.Item name="message" onClick={this.handleItemClick}>
-            <Icon name="browser" size="large" style={iconStyle} />
+            <Icon name="comments outline" size="large" style={iconStyle} />
           </Menu.Item>
           <Menu.Item name="setting" onClick={this.handleItemClick}>
             <MyMenu />

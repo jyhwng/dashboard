@@ -5,14 +5,14 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 // import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 import './index.css';
 import App from './App';
-import asyncComponent from './components/AsyncComponent';
+import asyncComponent from './AsyncComponent';
 import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
 
 const AsyncDashboard = asyncComponent(() => import('./containers/Dashboard'));
 const AsyncForm = asyncComponent(() => import('./components/Form/Form'));
-const AsyncDropdown = asyncComponent(() =>
-  import('./components/Form/Dropdown')
+const AsyncDropdowns = asyncComponent(() =>
+  import('./components/Form/Dropdowns')
 );
 
 ReactDOM.render(
@@ -21,7 +21,7 @@ ReactDOM.render(
       <IndexRoute exact component={AsyncDashboard} />
       <Route path="dashboard" exact component={AsyncDashboard} />
       <Route path="form" exact component={AsyncForm} />
-      <Route path="dropdown" exact component={AsyncDropdown} />
+      <Route path="dropdowns" exact component={AsyncDropdowns} />
     </Route>
   </Router>,
   document.getElementById('root')
