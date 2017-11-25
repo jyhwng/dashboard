@@ -66,11 +66,10 @@ class LeftMenu extends Component {
         ]
       },
       {
-        name: 'charts',
+        name: 'chart',
         icon: 'bar chart',
       }
     ];
-
 
     return (
       <div className="left-menus">
@@ -93,7 +92,7 @@ class LeftMenu extends Component {
             )
           } else {
             return (
-              <Link to={item.name} name={item.name}
+              <Link to={item.name} name={item.name} key={item.name}
                 className={this.state.activeMenu === item.name ? 'menu active' : 'menu' }
                 onClick={() => this.setState({ activeMenu: item.name })}
                 >

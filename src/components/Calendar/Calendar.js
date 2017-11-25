@@ -12,19 +12,19 @@ class Calendar extends Component {
         <Grid>
           <Grid.Row>
             <Grid.Column width={8}>
-              <Segment className="date-range-wrapper">
+              <Segment>
                 <DateRange />
               </Segment>
             </Grid.Column>
             <Grid.Column width={8}>
-              <Segment className="full-calendar-wrapper">
+              <Segment>
                 <FullCalendar />
               </Segment>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
             <Grid.Column>
-              <Segment className="full-calendar-wrapper">
+              <Segment>
                 <FullCalendar />
               </Segment>
             </Grid.Column>

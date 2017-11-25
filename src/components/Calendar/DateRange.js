@@ -27,7 +27,7 @@ class DateRange extends Component {
     // }
 
     return (
-      <div>
+      <div className="date-range-wrapper">
         <BigCalendar
           events={events}
           formats={formats}

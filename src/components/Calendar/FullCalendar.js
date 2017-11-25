@@ -16,7 +16,7 @@ class FullCalendar extends Component {
     };
 
     return (
-      <div>
+      <div className="full-calendar-wrapper">
         <BigCalendar
           events={events}
           startAccessor="startDate"
