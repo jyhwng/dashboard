@@ -1,0 +1,62 @@
+@import "../../styles/_common.scss";
+
+.time-picker {
+  width: 240px;
+	height: 138px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	box-shadow: $boxShadow;
+  border: solid 1px #e8e8ec;
+  display: flex;
+  padding: 13px 22px;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-size: 20px;
+  .subtracters, .adders {
+    display: flex;
+    .icon-wrapper {
+      width: 32px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .icon-wrapper:first-child {
+      margin-left: 6px;      
+    }
+    .icon-wrapper:last-child {
+      margin-left: 65px;
+    }
+    .icon-wrapper:hover {
+      background-color: #f1f1f6;
+    }
+  }
+  .time {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+    span {
+      padding: 8px;
+    }
+    .hour, .minute {
+      width: 40px;
+      border-radius: 4px;
+      // cursor: pointer;
+    }
+    .hour:hover, .minute:hover {
+      background-color: #f1f1f6;
+    }
+    .period {
+      background-color: $lightGreen;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #fff;      
+    }
+  }
+}
