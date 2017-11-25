@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { Menu, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import './LeftMenu.css';
 
 class SubMenu extends Component {
   render() {
     let subMenu = this.props.submenu;
-    let iconStyle = {
-      marginRight: '10px'
-    };
 
-    return (
-      <div>
-        {subMenu.map(submenu => {
-          return (
-            <div key={submenu.name} className="sub-menu">
-              <Link to={submenu.name}>
-                <Icon name="plus" size="small" style={iconStyle} />
-                <span>{submenu.name}</span>
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-    );
+    if (subMenu !== null) {
+      return (
+        <div>
+          {subMenu.map(submenu => {
+            return (
+              <div key={submenu.name} className="sub-menu">
+                <Link to={submenu.name}>
+                  <Icon name="plus" size="small"/>
+                  <span>{submenu.name}</span>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      );
+    } else {
+      return <div></div>
+    }
   }
 }
 
@@ -31,24 +32,15 @@ class LeftMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMenu: 'Dashboard'
+      activeMenu: 'dashboard'
     };
   }
-
-  handleItemClick = (e, { name }) => {
-    if (this.state.activeMenu === name) {
-      this.setState({ activeMenu: '' });
-    } else {
-      this.setState({ activeMenu: name });
-    }
-  };
 
   render() {
     const menuList = [
       {
         name: 'dashboard',
         icon: 'inbox',
-        submenus: []
       },
       {
         name: 'form',
@@ -62,7 +54,6 @@ class LeftMenu extends Component {
       {
         name: 'calendar',
         icon: 'calendar check',
-        submenus: []
       },
       {
         name: 'layout',
@@ -77,43 +68,41 @@ class LeftMenu extends Component {
       {
         name: 'charts',
         icon: 'bar chart',
-        submenus: []
       }
     ];
 
-    let iconStyle = {
-      marginRight: '10px'
-    };
 
     return (
       <div className="left-menus">
-        <Menu pointing secondary vertical className="side-menu">
-          {menuList.map(item => {
+        {menuList.map(item => {
+          if (item.submenus) {
             return (
-              <div key={item.name}>
-                <Menu.Item
-                  name={item.name}
-                  active={this.state.activeMenu === item.name}
-                  onClick={this.handleItemClick}
-                >
-                  <Icon name={item.icon} size="large" style={iconStyle} />
+              <div key={item.name}
+                className={this.state.activeMenu === item.name ? 'menu active' : 'menu' }
+                onClick={() => this.setState({ activeMenu: item.name })}>
+                  <Icon name={item.icon} size="large"/>
                   <span>{item.name}</span>
-                  {item.submenus.length === 0 ? null : (
-                    <Icon name="angle down" className="side-menu-drop-down" />
-                  )}
-                </Menu.Item>
-                <div
-                  className={
-                    'sub-menu-container ' +
-                    (this.state.activeMenu === item.name ? 'active' : '')
-                  }
-                >
-                  <SubMenu submenu={item.submenus} menu={item} />
+                  <Icon name={this.state.activeMenu === item.name ? "angle up" : "angle down" }/>
+                <div className="">
+                  <div className={ 'sub-menu-container ' +
+                      (this.state.activeMenu === item.name ? 'active' : '') } >
+                    <SubMenu submenu={item.submenus} menu={item} />
+                  </div>
                 </div>
               </div>
-            );
-          })}
-        </Menu>
+            )
+          } else {
+            return (
+              <Link to={item.name} name={item.name}
+                className={this.state.activeMenu === item.name ? 'menu active' : 'menu' }
+                onClick={() => this.setState({ activeMenu: item.name })}
+                >
+                <Icon name={item.icon} size="large"/>
+                <span>{item.name}</span>
+              </Link>
+            )
+          }
+        })}
       </div>
     );
   }

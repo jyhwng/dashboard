@@ -1,15 +1,5 @@
 @import "../../styles/_common.scss";
 
-.left-menus {
-  position: fixed;
-  width: 200px;
-  padding-right: 0 !important;
-  background-color: #fff;
-  height: 100%;
-  padding-top: 20px;
-  top: 47px;
-}
-
 .ui.vertical.menu {
   width: 100% !important;
     font-family: 'Poppins', sans-serif;
@@ -26,32 +16,59 @@
         background-color: #f8f8f8 !important;
         font-weight: 400 !important;
     }
-    .side-menu-drop-down {
-        right: 10px;
-        position: absolute;
-    }
 }
 
-.side-menu {
-    font-size: 12px !important;
-    .item {
-      text-transform: capitalize !important;
+.left-menus {
+  position: fixed;
+  width: 200px;
+  padding-right: 0 !important;
+  background-color: #fff;
+  height: 100%;
+  margin-top: 20px;
+  top: 47px;
+  font-size: 12px !important;
+  border-right: 2px solid #e8e8ec;
+  .menu {
+    color: $fontGray;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    text-transform: capitalize !important;
+    padding: 15px 10px 15px 18px;
+    .angle.down.icon,
+    .angle.up.icon {
+      right: 10px;
+      position: absolute;
     }
-    .sub-menu-container {
+  }
+  .menu .icon:first-child {
+    margin-right: 10px;
+
+  }
+  .menu.active {
+    border-right: 4px solid $lightGreen;
+    background-color: $backgroundGray;
+  }
+  .sub-menu-container {
+    .sub-menu {
       display: none;
+      height: 0;
       transition: 0.3s all ease;
     }
-    .sub-menu-container.active {
+  }
+  .sub-menu-container.active {
+    .sub-menu {
       display: block;
+      height: 100%;
+      text-transform: capitalize;
       transition: 0.3s all ease;
-      .sub-menu {
-        text-transform: capitalize;
-        transition: 0.3s all ease;
-        font-size: 0.75rem;        
-        padding: .5em 1.14285714em .5em 3em;
-        a {
-          color: #4a4a4a;
-        }
+      // padding: .5em 1.14285714em .5em 3em;
+      a {
+        color: #4a4a4a;
+      }
+      .icon {
+       margin: 10px 10px 0 10px; 
       }
     }
+  }
 }
