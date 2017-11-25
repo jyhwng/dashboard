@@ -1,13 +1,11 @@
 .ui.card {
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 .ui.segment {
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0 2px 20px 0 rgba(185, 188, 210, 0.2);
-  border: solid 1px #e8e8ec;
-}
+  border: solid 1px #e8e8ec; }
 
 .range-picker {
   position: relative;
@@ -16,59 +14,51 @@
   background-color: #f8f8f8;
   border-radius: 8px;
   margin-top: 32px;
-  margin-bottom: 32px;
-}
-.range-picker .bar {
-  height: 8px;
-  border-radius: 8px;
-  background-color: #01a8fe;
-}
-.range-picker .handle {
-  position: absolute;
-  margin-left: -12px;
-  top: -9px;
-  width: 24px;
-  height: 24px;
-  border-radius: 24px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(185, 188, 210, 0.2);
-  border: solid 1px #e8e8ec;
-}
-.range-picker .tooltip {
-  position: absolute;
-  background-color: #01a8fe;
-  width: 24px;
-  margin-left: -12px;
-  height: 16.1px;
-  border-radius: 3px;
-  top: -29px;
-  font-size: 10px;
-  font-weight: 600;
-  text-align: center;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.range-picker .tooltip.start {
-  background-color: #e8e8ec;
-  color: #9b9b9b;
-  left: 0;
-  margin: 0;
-}
-.range-picker .tooltip.end {
-  background-color: #e8e8ec;
-  color: #9b9b9b;
-  right: 0;
-  margin: 0;
-}
-.range-picker .scale {
-  margin: 0 1.5%;
-  width: 97%;
-  height: 8px;
-  background: -webkit-linear-gradient(left, #e8e8ec 2%, transparent 1%),
-    -webkit-linear-gradient(left, #e8e8ec 4%, transparent 1%);
-  background-position: 2px 100%;
-  background-repeat: repeat-x;
-  background-size: 10% 8px, 5% 4px;
-}
+  margin-bottom: 32px; }
+  .range-picker .bar {
+    height: 8px;
+    border-radius: 8px;
+    background-color: #01a8fe; }
+  .range-picker .handle {
+    position: absolute;
+    margin-left: -12px;
+    top: -9px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(185, 188, 210, 0.2);
+    border: solid 1px #e8e8ec; }
+  .range-picker .tooltip {
+    position: absolute;
+    background-color: #01a8fe;
+    width: 24px;
+    margin-left: -12px;
+    height: 16.1px;
+    border-radius: 3px;
+    top: -29px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .range-picker .tooltip.start {
+    background-color: #e8e8ec;
+    color: #9b9b9b;
+    left: 0;
+    margin: 0; }
+  .range-picker .tooltip.end {
+    background-color: #e8e8ec;
+    color: #9b9b9b;
+    right: 0;
+    margin: 0; }
+  .range-picker .scale {
+    margin: 0 1.5%;
+    width: 97%;
+    height: 8px;
+    background: -webkit-linear-gradient(left, #e8e8ec 2%, transparent 1%), -webkit-linear-gradient(left, #e8e8ec 4%, transparent 1%);
+    background-position: 2px 100%;
+    background-repeat: repeat-x;
+    background-size: 10% 8px, 5% 4px; }
