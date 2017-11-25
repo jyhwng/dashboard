@@ -1,15 +1,5 @@
 @import "../../styles/_common.scss";
 
-.recharts-cartesian-grid {
-    .recharts-cartesian-grid-vertical {
-        display: none;
-    }
-}
-
-.recharts-cartesian-axis-ticks {
-    .recharts-cartesian-axis-tick {
-        text {
-            fill: #9b9b9b;
-        }
-    }
+.chart-container {
+    min-height: 400px;
 }
