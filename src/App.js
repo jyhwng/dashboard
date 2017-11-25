@@ -4,7 +4,6 @@ import LeftMenu from './components/LeftMenu/LeftMenu';
 import TopMenu from './components/TopMenu/TopMenu';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import 'react-dates/initialize';
 
 class App extends Component {
   render() {
