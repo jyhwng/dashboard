@@ -1,16 +1,40 @@
-import React from 'react'
-import { Dropdown } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Icon } from 'semantic-ui-react'
+import './DropdownButton.css'
 
-const DropdownButton = () => (
-  <Dropdown text='Button' floating button className='icon'>
-    <Dropdown.Menu>
-      <Dropdown.Header icon='tags' content='Filter by tag' />
-      <Dropdown.Divider />
-      <Dropdown.Item label={{ color: 'red', empty: true, circular: true }} text='Important' />
-      <Dropdown.Item label={{ color: 'blue', empty: true, circular: true }} text='Announcement' />
-      <Dropdown.Item label={{ color: 'black', empty: true, circular: true }} text='Discussion' />
-    </Dropdown.Menu>
-  </Dropdown>
-)
+export default class DropdownButton extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      clicked: false,
+    }
+  }
 
-export default DropdownButton
+  render() {
+    const options = [
+      {key: 1, content: 'option 1'},
+      {key: 2, content: 'option 2'},
+      {key: 3, content: 'option 3'},
+    ]
+
+    const dropdown = (
+      <div className="dropdown-options">
+        {options.map((option)=>{
+          return (
+            <div className="option" key={option.key}>{option.content}</div>
+          )
+        })}
+      </div>
+    )
+
+    return (
+      <div className="dropdown-button">
+        <button onClick={() => this.setState({ clicked: !this.state.clicked })} style={this.props.style}>
+          <span>Button</span>
+          <Icon name={ this.state.clicked ? "angle up" : "angle down"}/>
+        </button>
+        {this.state.clicked ? dropdown: null}
+      </div>
+    )
+  }
+}

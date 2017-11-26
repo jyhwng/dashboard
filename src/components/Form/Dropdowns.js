@@ -78,6 +78,14 @@ class SearchableMultipleSelectionDropdown extends Component {
 
 class Dropdowns extends Component {
   render() {
+    const squareButtonStyle = {
+      borderRadius: '4px',
+    }
+
+    const roundedButtonStyle = {
+      borderRadius: '32px',
+    }
+
     return (
       <MainContainer>
         <Grid columns="equal">
@@ -99,7 +107,9 @@ class Dropdowns extends Component {
               <DropdownSearch/>
               <Divider hidden/>
               <p>Button Dropdown</p>
-              <DropdownButton/>
+              <DropdownButton style={squareButtonStyle} />
+              <Divider hidden/>
+              <DropdownButton style={roundedButtonStyle} />
             </Segment>
           </Grid.Column>
         </Grid>

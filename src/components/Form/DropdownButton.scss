@@ -1,0 +1,36 @@
+@import "../../styles/_common.scss";
+
+.dropdown-button {
+  color: #4a4a4a;
+  font-size: 12px;
+  button {
+    cursor: pointer;
+    padding: 9px 16px;
+    background-color: $lightGreen;
+    color: #fff;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    i.icon {
+      margin-right: -5px;
+      margin-left: 5px;
+    }
+  }
+  .dropdown-options {
+    font-size: 10px;
+    width: fit-content;
+    margin-top: 2px;    
+    // border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: $boxShadow;
+    border: solid 1px #e8e8ec;
+    .option {
+      cursor: pointer;
+      padding: 0 16px;
+    }
+    .option:hover {
+      color: $lightGreen;
+    }
+  }
+}

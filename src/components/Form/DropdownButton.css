@@ -1,0 +1,36 @@
+.ui.card {
+  width: 100% !important; }
+
+.ui.segment {
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px 0 rgba(185, 188, 210, 0.2);
+  border: solid 1px #e8e8ec; }
+
+.dropdown-button {
+  color: #4a4a4a;
+  font-size: 12px; }
+  .dropdown-button button {
+    cursor: pointer;
+    padding: 9px 16px;
+    background-color: #3cbfc8;
+    color: #fff;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-between; }
+    .dropdown-button button i.icon {
+      margin-right: -5px;
+      margin-left: 5px; }
+  .dropdown-button .dropdown-options {
+    font-size: 10px;
+    width: fit-content;
+    margin-top: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 20px 0 rgba(185, 188, 210, 0.2);
+    border: solid 1px #e8e8ec; }
+    .dropdown-button .dropdown-options .option {
+      cursor: pointer;
+      padding: 0 16px; }
+    .dropdown-button .dropdown-options .option:hover {
+      color: #3cbfc8; }
