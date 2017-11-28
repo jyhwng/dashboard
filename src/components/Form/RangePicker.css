@@ -58,7 +58,41 @@
     margin: 0 1.5%;
     width: 97%;
     height: 8px;
-    background: -webkit-linear-gradient(left, #e8e8ec 2%, transparent 1%), -webkit-linear-gradient(left, #e8e8ec 4%, transparent 1%);
     background-position: 2px 100%;
     background-repeat: repeat-x;
     background-size: 10% 8px, 5% 4px; }
+
+.rheostat {
+  overflow: visible; }
+
+.rheostat-background {
+  background-color: #f8f8f8;
+  height: 8px;
+  border-radius: 8px;
+  border: none;
+  position: relative; }
+
+.rheostat-progress {
+  background-color: #01a8fe;
+  position: absolute;
+  height: 8px;
+  border-radius: 8px;
+  top: 0px; }
+
+.rheostat-handle {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 24px;
+  height: 24px;
+  width: 24px;
+  top: -8px;
+  margin-left: -4px;
+  outline: none;
+  z-index: 2; }
+
+.rheostat-handle:before,
+.rheostat-handle:after {
+  content: '100';
+  display: block;
+  position: absolute;
+  background-color: #dadfe8; }

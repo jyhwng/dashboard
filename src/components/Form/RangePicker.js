@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import MainContainer from '../../containers/MainContainer';
 import { Segment, Grid, Divider } from 'semantic-ui-react';
 import './RangePicker.css';
+import $ from 'jquery';
+import { findDOMNode } from 'react-dom';
+import Rheostat from 'rheostat';
+// https://github.com/airbnb/rheostat
 
 class RangePicker extends Component {
+  handleDrag = () => {
+    const handle = findDOMNode(this.refs.handle)
+    console.log(handle)
+    $(handle).draggable({ axis: "x" });
+  }
+
   render() {
     let dataPercent = 56;
     const rangePickerStyle = {
@@ -33,7 +43,7 @@ class RangePicker extends Component {
                     data-percent={dataPercent}
                     style={barStyle}
                   />
-                  <div className="handle" style={handleStyle} />
+                  <div className="handle" onDragStart={()=>this.handleDrag()} ref="handle" style={handleStyle} />
                   <div className="tooltip start">0</div>
                   <div className="tooltip" style={tooltipStyle}>
                     {dataPercent}
@@ -59,7 +69,14 @@ class RangePicker extends Component {
               </Segment>
             </Grid.Column>
             <Grid.Column>
-              <Segment />
+              <Segment>
+              <Rheostat
+                min={1}
+                max={100}
+                values={[56]}
+                pitPoints={10}
+              />
+              </Segment>
             </Grid.Column>
           </Grid.Row>
         </Grid>
