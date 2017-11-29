@@ -80,6 +80,7 @@
   top: 0px; }
 
 .rheostat-handle {
+  cursor: pointer;
   background-color: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 24px;
@@ -90,9 +91,22 @@
   outline: none;
   z-index: 2; }
 
+.range-picker {
+  --content: ''; }
+
 .rheostat-handle:before,
 .rheostat-handle:after {
-  content: '100';
   display: block;
   position: absolute;
-  background-color: #dadfe8; }
+  background-color: #01a8fe;
+  color: #fff;
+  border-radius: 4px;
+  top: -22px;
+  left: -1px;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  width: 24px;
+  height: 16px;
+  justify-content: center;
+  align-items: center; }
