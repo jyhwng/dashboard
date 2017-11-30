@@ -68,7 +68,8 @@
     height: 8px;
     border-radius: 8px;
     border: none;
-    position: relative; }
+    position: relative;
+    width: 100%; }
   .range-picker .rheostat-progress {
     background-color: #01a8fe;
     position: absolute;

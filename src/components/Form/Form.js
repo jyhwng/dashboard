@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MainContainer from '../../containers/MainContainer';
 import { Segment, Grid } from 'semantic-ui-react';
 import BasicForm from './BasicForm';
-import TextareaForm from './TextareaForm';
+// import TextareaForm from './TextareaForm';
 import InputForm from './InputForm';
 
 class Forms extends Component {
@@ -18,7 +18,7 @@ class Forms extends Component {
             </Grid.Column>
             <Grid.Column width={8}>
               <Segment>
-                <TextareaForm />
+
               </Segment>
             </Grid.Column>
           </Grid.Row>
