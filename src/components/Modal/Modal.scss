@@ -1,0 +1,62 @@
+@import "../../styles/_common.scss";
+
+.ui.modal>.actions {
+  background-color: #fff;
+  padding: 16px 24px;
+}
+
+.ui.modal>.close {
+  padding-top: 1.25rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  opacity: .8;
+  font-size: 1.25em;
+  width: 2.25rem;
+  height: 2.25rem;
+  right: 0;
+  color: $fontGray;
+  top: 0;
+}
+
+.open-modal {
+  cursor: pointer;
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: $skyBlue;
+  p {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+.modal-wrapper {
+  color: $fontGray;
+  .modal-close,
+  .modal-okay {
+    cursor: pointer;
+    width: 80px;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px $skyBlue;
+    p {
+      font-size: 12px;
+    }
+  }
+  .modal-close {
+    background-color: #ffffff;
+    p {
+      color: $skyBlue;
+    }
+  }
+  .modal-okay {
+    background-color: $skyBlue;
+    margin-left: 8px;
+    p {
+      color: #fff;
+    }
+  }
+}
