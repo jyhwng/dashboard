@@ -24,9 +24,12 @@
       align-items: center;
       border-radius: 4px;
       cursor: pointer;
+      i.icon {
+        margin: 0;
+      }
     }
     .icon-wrapper:first-child {
-      margin-left: 6px;      
+      margin-left: 4px;      
     }
     .icon-wrapper:last-child {
       margin-left: 65px;

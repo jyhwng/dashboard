@@ -16,18 +16,20 @@ const AsyncRangePicker = asyncComponent(() => import('./components/Form/RangePic
 const AsyncCalendar = asyncComponent(() => import('./components/Calendar/Calendar'));
 const AsyncChart = asyncComponent(() => import('./components/Chart/Chart'));
 const AsyncLayout = asyncComponent(() => import('./components/Layout/Layout'));
+const AsyncModal = asyncComponent(() => import('./components/Modal/Modal'));
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute exact component={AsyncDashboard} />
       <Route path="dashboard" exact component={AsyncDashboard} />
-      <Route path="form" exact component={AsyncForm} />
+      <Route path="input" exact component={AsyncForm} />
       <Route path="calendar" exact component={AsyncCalendar} />
       <Route path="dropdowns" exact component={AsyncDropdowns} />
       <Route path="range-picker" exact component={AsyncRangePicker} />
       <Route path="chart" exact component={AsyncChart} />
-      <Route path="layout" exact component={AsyncLayout} />
+      <Route path="accordion" exact component={AsyncLayout} />
+      <Route path="modal" exact component={AsyncModal} />
     </Route>
   </Router>,
   document.getElementById('root')

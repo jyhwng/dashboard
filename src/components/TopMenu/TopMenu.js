@@ -25,7 +25,6 @@ class TopMenu extends Component {
             <Link to="dashboard">AllNone</Link>
           </Menu.Item>
         </Menu.Menu>
-
         <Menu.Menu className="center menu">
           <Menu.Item
             name="home"

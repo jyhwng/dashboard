@@ -18,13 +18,6 @@ class Forms extends Component {
             </Grid.Column>
             <Grid.Column width={8}>
               <Segment>
-
-              </Segment>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <Segment>
                 <BasicForm />
               </Segment>
             </Grid.Column>

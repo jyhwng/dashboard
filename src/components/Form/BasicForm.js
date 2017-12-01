@@ -17,8 +17,7 @@ class BasicForm extends Component {
     return (
       <Form>
         <Form.Group widths="equal">
-          <Form.Input label="First name" placeholder="First name" />
-          <Form.Input label="Last name" placeholder="Last name" />
+          <Form.Input label="Name" placeholder="Name" />
           <Form.Select label="Gender" options={options} placeholder="Gender" />
         </Form.Group>
         <Form.Group inline>

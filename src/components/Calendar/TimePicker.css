@@ -31,8 +31,10 @@
       align-items: center;
       border-radius: 4px;
       cursor: pointer; }
+      .time-picker .subtracters .icon-wrapper i.icon, .time-picker .adders .icon-wrapper i.icon {
+        margin: 0; }
     .time-picker .subtracters .icon-wrapper:first-child, .time-picker .adders .icon-wrapper:first-child {
-      margin-left: 6px; }
+      margin-left: 4px; }
     .time-picker .subtracters .icon-wrapper:last-child, .time-picker .adders .icon-wrapper:last-child {
       margin-left: 65px; }
     .time-picker .subtracters .icon-wrapper:hover, .time-picker .adders .icon-wrapper:hover {

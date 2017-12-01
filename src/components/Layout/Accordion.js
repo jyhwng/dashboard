@@ -6,7 +6,7 @@ class MultipleAccordion extends Component {
   constructor(props) {
     super(props)
     this.state = {
-        activePanel: ['option1', 'option2'],
+        activePanel: ['option1'],
     }
   }
 
