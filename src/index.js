@@ -1,22 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-// import AuthenticatedRoute from "./components/AuthenticatedRoute";
-// import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 import './index.css';
 import App from './App';
 import asyncComponent from './AsyncComponent';
 import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
 
-const AsyncDashboard = asyncComponent(() => import('./containers/Dashboard'));
-const AsyncForm = asyncComponent(() => import('./components/Form/Form'));
-const AsyncDropdowns = asyncComponent(() => import('./components/Form/Dropdowns'));
+const AsyncDashboard = asyncComponent(() => import('./pages/DashboardPage/Dashboard'));
+const AsyncForm = asyncComponent(() => import('./pages/FormPage/Form'));
+const AsyncDropdowns = asyncComponent(() => import('./pages/DropdownPage/Dropdowns'));
 const AsyncRangePicker = asyncComponent(() => import('./components/Form/RangePicker'));
-const AsyncCalendar = asyncComponent(() => import('./components/Calendar/Calendar'));
-const AsyncChart = asyncComponent(() => import('./components/Chart/Chart'));
-const AsyncLayout = asyncComponent(() => import('./components/Layout/Layout'));
-const AsyncModal = asyncComponent(() => import('./components/Modal/Modal'));
+// const AsyncInput = asyncComponent(() => import('./components/Form/Input'));
+const AsyncCalendar = asyncComponent(() => import('./pages/CalendarPage/Calendar'));
+const AsyncChart = asyncComponent(() => import('./pages/ChartPage/Chart'));
+const AsyncLayout = asyncComponent(() => import('./pages/LayoutPage/Layout'));
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -25,11 +23,10 @@ ReactDOM.render(
       <Route path="dashboard" exact component={AsyncDashboard} />
       <Route path="input" exact component={AsyncForm} />
       <Route path="calendar" exact component={AsyncCalendar} />
-      <Route path="dropdowns" exact component={AsyncDropdowns} />
+      <Route path="dropdown" exact component={AsyncDropdowns} />
       <Route path="range-picker" exact component={AsyncRangePicker} />
       <Route path="chart" exact component={AsyncChart} />
-      <Route path="accordion" exact component={AsyncLayout} />
-      <Route path="modal" exact component={AsyncModal} />
+      <Route path="layout" exact component={AsyncLayout} />
     </Route>
   </Router>,
   document.getElementById('root')

@@ -48,9 +48,12 @@ class LeftMenu extends Component {
         icon: 'checkmark box',
         submenus: [
           { name: 'input' },
-          { name: 'dropdowns' },
           { name: 'range-picker' }
         ]
+      },
+      {
+        name: 'dropdown',
+        icon: 'sitemap',
       },
       {
         name: 'calendar',
@@ -59,11 +62,6 @@ class LeftMenu extends Component {
       {
         name: 'layout',
         icon: 'grid layout',
-        submenus: [
-          { name: 'accordion' },
-          { name: 'pagination' },
-          { name: 'modal' }
-        ]
       },
       {
         name: 'chart',

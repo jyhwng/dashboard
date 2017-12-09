@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MainContainer from '../../containers/MainContainer';
 import { Segment, Grid, Divider } from 'semantic-ui-react';
 import './RangePicker.css';
 import Rheostat from 'rheostat';
@@ -9,21 +8,19 @@ import styled from 'styled-components'
 class RangePickers extends Component {
   render() {
     return (
-      <MainContainer>
-        <Grid columns="equal">
-          <Grid.Row>
-            <Grid.Column>
-              <Segment>
-                <p>Default Range picker</p>
-                <DefaultRangePicker/>
-                <Divider hidden/>
-                <p>Range picker with scale</p>
-                <PitRangePicker/>
-              </Segment>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </MainContainer>
+      <Grid columns="equal">
+        <Grid.Row>
+          <Grid.Column width={8}>
+            <Segment>
+              <p>Default Range picker</p>
+              <DefaultRangePicker/>
+              <Divider hidden/>
+              <p>Range picker with scale</p>
+              <PitRangePicker/>
+            </Segment>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }

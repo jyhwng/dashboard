@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Segment, Dropdown, Divider } from 'semantic-ui-react';
-import MainContainer from '../../containers/MainContainer';
-import DropdownSearch from './DropdownSearch';
-import DropdownButton from './DropdownButton'
+import DropdownSearch from '../../components/Dropdown/DropdownSearch';
+import DropdownButton from '../../components/Dropdown/DropdownButton'
 
 const singleSelectionOptions = [
     {
@@ -87,33 +86,31 @@ class Dropdowns extends Component {
     }
 
     return (
-      <MainContainer>
-        <Grid columns="equal">
-          <Grid.Column>
-            <Segment>
-              <p>Single Selection Dropdown</p>
-              <SingleSelectionDropdown/>
-              <Divider hidden/>
-              <p>Multiple Selection Dropdown</p>
-              <MultipleSelectionDropdown/>
-              <Divider hidden/>
-              <p>Searchable Multiple Selection Dropdown</p>
-              <SearchableMultipleSelectionDropdown/>
-            </Segment>
-          </Grid.Column>
-          <Grid.Column>
-            <Segment>
-              <p>Search Dropdown</p>
-              <DropdownSearch/>
-              <Divider hidden/>
-              <p>Button Dropdown</p>
-              <DropdownButton style={squareButtonStyle} />
-              <Divider hidden/>
-              <DropdownButton style={roundedButtonStyle} />
-            </Segment>
-          </Grid.Column>
-        </Grid>
-      </MainContainer>
+      <Grid columns="equal">
+        <Grid.Column>
+          <Segment>
+            <p>Single Selection Dropdown</p>
+            <SingleSelectionDropdown/>
+            <Divider hidden/>
+            <p>Multiple Selection Dropdown</p>
+            <MultipleSelectionDropdown/>
+            <Divider hidden/>
+            <p>Searchable Multiple Selection Dropdown</p>
+            <SearchableMultipleSelectionDropdown/>
+          </Segment>
+        </Grid.Column>
+        <Grid.Column>
+          <Segment>
+            <p>Search Dropdown</p>
+            <DropdownSearch/>
+            <Divider hidden/>
+            <p>Button Dropdown</p>
+            <DropdownButton style={squareButtonStyle} />
+            <Divider hidden/>
+            <DropdownButton style={roundedButtonStyle} />
+          </Segment>
+        </Grid.Column>
+      </Grid>
     );
   }
 }

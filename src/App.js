@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import LeftMenu from './components/LeftMenu/LeftMenu';
 import TopMenu from './components/TopMenu/TopMenu';
+import MainContainer from './pages/MainContainer'
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
@@ -10,7 +11,9 @@ class App extends Component {
       <div className="App">
         <TopMenu />
         <LeftMenu />
-        {this.props.children}
+        <MainContainer>
+          {this.props.children}
+        </MainContainer>
         <Footer />
       </div>
     );

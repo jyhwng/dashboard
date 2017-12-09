@@ -8,7 +8,7 @@ class MultipleAccordion extends Component {
     this.state = {
         activePanel: ['option1'],
     }
-  }
+}
 
   handleSelect = (option) => {
       let selectedOptions = this.state.activePanel

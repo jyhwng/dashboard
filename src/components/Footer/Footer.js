@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'semantic-ui-react';
-import MainContainer from '../../containers/MainContainer';
+import MainContainer from '../../pages/MainContainer';
 import './Footer.css';
 
 class Footer extends Component {
