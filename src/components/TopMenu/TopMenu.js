@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { Menu, Icon, Dropdown } from 'semantic-ui-react';
 import TopSearch from './TopSearch';
 import MyMenu from './MyMenu';
-import Notification from './Notification';
+import Notification from '../Notification/Notification';
 import './TopMenu.css';
 
 class TopMenu extends Component {
@@ -70,7 +70,7 @@ class TopMenu extends Component {
             <TopSearch />
           </Menu.Item>
           <Menu.Item name="notification" onClick={this.handleItemClick}>
-            <Notification />
+            <Notification icon="alarm outline" numOfNew={3} />
           </Menu.Item>
           <Menu.Item name="message" onClick={this.handleItemClick}>
             <Icon name="comments outline" size="large" style={iconStyle} />

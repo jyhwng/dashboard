@@ -8,12 +8,18 @@
   border: solid 1px #e8e8ec; }
 
 .new-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: -7px;
   right: 5px;
-  width: 16px;
+  width: fit-content;
   height: 16px;
   border-radius: 16px;
   background-color: #3cbfc8;
   color: #fff;
   text-align: center; }
+  .new-notification span {
+    font-size: 0.75rem;
+    padding: 0 5px; }
