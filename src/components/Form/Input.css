@@ -1,0 +1,27 @@
+.ui.card {
+  width: 100% !important; }
+
+.ui.segment {
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px 0 rgba(185, 188, 210, 0.2);
+  border: solid 1px #e8e8ec; }
+
+.blendx_input .ui.input {
+  font-size: 12px; }
+
+.blendx_input .ui.disabled.input input {
+  background-color: #e8e8ec;
+  color: #9b9b9b; }
+
+.blendx_input .ui.action.input > .dropdown {
+  background-color: #3cbfc8;
+  color: #fff;
+  font-size: 12px; }
+
+.blendx_input .ui.labeled.input .ui.basic.label {
+  font-size: 14px;
+  background-color: #e8e8ec;
+  color: #9b9b9b; }
+  .blendx_input .ui.labeled.input .ui.basic.label i {
+    margin-right: 0; }

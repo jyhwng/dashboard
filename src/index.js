@@ -8,10 +8,9 @@ import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
 
 const AsyncDashboard = asyncComponent(() => import('./pages/DashboardPage/Dashboard'));
-const AsyncForm = asyncComponent(() => import('./pages/FormPage/Form'));
 const AsyncDropdowns = asyncComponent(() => import('./pages/DropdownPage/Dropdowns'));
-const AsyncRangePicker = asyncComponent(() => import('./components/Form/RangePicker'));
-// const AsyncInput = asyncComponent(() => import('./components/Form/Input'));
+const AsyncRangePicker = asyncComponent(() => import('./pages/FormPage/RangePicker'));
+const AsyncInput = asyncComponent(() => import('./pages/FormPage/Input'));
 const AsyncCalendar = asyncComponent(() => import('./pages/CalendarPage/Calendar'));
 const AsyncChart = asyncComponent(() => import('./pages/ChartPage/Chart'));
 const AsyncLayout = asyncComponent(() => import('./pages/LayoutPage/Layout'));
@@ -21,7 +20,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute exact component={AsyncDashboard} />
       <Route path="dashboard" exact component={AsyncDashboard} />
-      <Route path="input" exact component={AsyncForm} />
+      <Route path="input" exact component={AsyncInput} />
       <Route path="calendar" exact component={AsyncCalendar} />
       <Route path="dropdown" exact component={AsyncDropdowns} />
       <Route path="range-picker" exact component={AsyncRangePicker} />
