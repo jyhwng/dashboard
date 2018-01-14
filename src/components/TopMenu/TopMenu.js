@@ -22,7 +22,7 @@ class TopMenu extends Component {
       <Menu pointing secondary className="top-menu">
         <Menu.Menu postion="left" className="menu-logo">
           <Menu.Item>
-            <Link to="dashboard">AllNone</Link>
+            <Link to="dashboard">dashboard</Link>
           </Menu.Item>
         </Menu.Menu>
         <Menu.Menu className="center menu">

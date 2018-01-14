@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Grid, Divider } from 'semantic-ui-react';
+import { Segment, Grid } from 'semantic-ui-react';
 import Accordion from '../../components/Accordion/Accordion'
 import Modal from '../../components/Modal/Modal'
 import Notification from '../../components/Notification/Notification'
