@@ -12,3 +12,6 @@
 
 .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick text {
   fill: #9b9b9b; }
+
+.recharts-responsive-container {
+  min-height: 400px; }

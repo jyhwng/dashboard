@@ -22,7 +22,7 @@ class TopMenu extends Component {
       <Menu pointing secondary className="top-menu">
         <Menu.Menu postion="left" className="menu-logo">
           <Menu.Item>
-            <Link to="dashboard">dashboard</Link>
+            <Link to="dashboard">Dashboard</Link>
           </Menu.Item>
         </Menu.Menu>
         <Menu.Menu className="center menu">
@@ -41,7 +41,7 @@ class TopMenu extends Component {
             onClick={this.handleItemClick}
           >
             <Icon name="line chart" size="large" style={iconStyle} />
-            <span>Datalab</span>
+            <span>Data</span>
           </Menu.Item>
 
           <Menu.Item
