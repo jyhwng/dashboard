@@ -15,5 +15,3 @@ $ cd dashboard
 $ npm install
 $ npm start
 ```
-
-by [@jyhwng](https://github.com/jyhwng)
