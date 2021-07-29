@@ -1,4 +1,5 @@
-# React dashboard with Semantic UI & Recharts
+# [DEPRECATED] React dashboard with Semantic UI & Recharts 
+> This repo is not maintained anymore. Thanks for the interest and see you in other repos! 👋
 
 - Simple UI including range picker, dropdown, accordion and more
 - Sample charts with [Recharts](http://recharts.org/en-US)
