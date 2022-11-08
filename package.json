@@ -25,7 +25,7 @@
     "faker": "^4.1.0",
     "file-loader": "0.11.2",
     "fs-extra": "3.0.1",
-    "html-webpack-plugin": "2.29.0",
+    "html-webpack-plugin": "5.5.0",
     "jest": "20.0.4",
     "moment": "^2.24.0",
     "node-sass-chokidar": "^1.4.0",
